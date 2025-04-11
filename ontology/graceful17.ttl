@@ -3,7 +3,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix g17raw: <https://g17.dhi-roma.it/raw/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
-@prefix grace: <https://w3id.org/g17/ontology/> .
+@prefix grace: <https://g17.dhi-roma.it/ontology/> .
 @prefix ns1: <http://purl.org/vocommons/voaf#> .
 @prefix ns2: <http://purl.org/ontology/bibo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -65,7 +65,7 @@ grace: a owl:Ontology ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
     ns2:status <http://purl.org/ontology/bibo/status/draft> ;
     vann:preferredNamespacePrefix "grace"@en ;
-    vann:preferredNamespaceUri "https://w3id.org/g17/ontology/" ;
+    vann:preferredNamespaceUri "https://g17.dhi-roma.it/ontology/" ;
     ns1:extends <https://w3id.org/otherOntology> ;
     schema1:citation "Cite this vocabulary as: ...."@en ;
     owl:backwardCompatibleWith grace:1.0.0 ;
