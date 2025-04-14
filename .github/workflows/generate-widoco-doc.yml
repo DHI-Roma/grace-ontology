@@ -1,0 +1,45 @@
+name: Generate Ontology Documentation with Widoco
+
+on:
+  push:
+    paths:
+      - 'ontology/**'      # only run when ontology is updated
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+
+    - name: Download Widoco
+      run: |
+        mkdir -p widoco
+        curl -L https://github.com/dgarijo/Widoco/releases/latest/download/widoco.jar -o widoco/widoco.jar
+
+    - name: Generate HTML docs with Widoco
+      run: |
+        mkdir -p docs/widoco
+        java -jar widoco/widoco.jar \
+          -ontFile ontology/your-ontology.owl \
+          -outFolder docs/widoco \
+          -getOntologyMetadata \
+          -rewriteAll \
+          -uniteSections \
+          -includeAnnotationProperties
+
+    - name: Commit and push docs/widoco
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add docs/widoco
+        git commit -m "Update ontology documentation [auto]" || echo "No changes to commit"
+        git push
