@@ -23,7 +23,7 @@ jobs:
     - name: Download Widoco
       run: |
         mkdir -p widoco
-        curl -L https://github.com/dgarijo/Widoco/releases/latest/download/widoco.jar -o widoco/widoco.jar
+        curl -L https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar -o widoco/widoco.jar
 
     - name: Generate HTML docs with Widoco
       run: |
