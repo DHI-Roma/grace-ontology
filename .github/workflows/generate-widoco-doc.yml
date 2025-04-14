@@ -34,8 +34,10 @@ jobs:
           -getOntologyMetadata \
           -rewriteAll \
           -uniteSections \
-          -includeAnnotationProperties
-
+          -includeAnnotationProperties \
+          -webVowl \
+          -excludeIntroduction
+        mv docs/widoco/doc/index-en.html docs/widoco/doc/index.html
     - name: Commit and push docs/widoco
       run: |
         git config user.name "github-actions"
