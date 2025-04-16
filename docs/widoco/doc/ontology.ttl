@@ -1,27 +1,27 @@
-@prefix : <https://w3id.org/g17/ontology/> .
+@prefix : <https://w3id.org/grace/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/g17/ontology/> .
+@base <https://w3id.org/grace/ontology/> .
 
-<https://w3id.org/g17/ontology/> rdf:type owl:Ontology ;
-                                  owl:versionIRI <https://w3id.org/g17/ontology/1.0.1> ;
-                                  owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
-                                  <http://purl.org/dc/elements/1.1/title> "Graceful17 Ontology"@en ;
-                                  <http://purl.org/dc/terms/created> "2025-04-03T16:26:28"@en ;
-                                  <http://purl.org/dc/terms/creator> "Bruno Boute"@en ,
-                                                                     "Christoph Sander"@en ;
-                                  <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                                  <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
-                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "grace"@en ;
-                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/g17/ontology/" ;
-                                  <http://purl.org/vocommons/voaf#extends> <https://w3id.org/otherOntology> ;
-                                  <http://schema.org/citation> "Cite this vocabulary as: ...."@en ;
-                                  rdfs:label "Example" ;
-                                  owl:backwardCompatibleWith <https://w3id.org/g17/ontology/1.0.0> ;
-                                  owl:priorVersion <https://w3id.org/g17/ontology/1.0.0> .
+<https://w3id.org/grace/ontology/> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/grace/ontology/1.0.1> ;
+                                    owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
+                                    <http://purl.org/dc/elements/1.1/title> "Graceful17 Ontology"@en ;
+                                    <http://purl.org/dc/terms/created> "2025-04-03T16:26:28"@en ;
+                                    <http://purl.org/dc/terms/creator> "Bruno Boute"@en ,
+                                                                       "Christoph Sander"@en ;
+                                    <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                    <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "grace"@en ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/grace/ontology/" ;
+                                    <http://purl.org/vocommons/voaf#extends> <https://w3id.org/otherOntology> ;
+                                    <http://schema.org/citation> "Cite this vocabulary as: ...."@en ;
+                                    rdfs:label "Example" ;
+                                    owl:backwardCompatibleWith <https://w3id.org/grace/ontology/1.0.0> ;
+                                    owl:priorVersion <https://w3id.org/grace/ontology/1.0.0> .
 
 #################################################################
 #    Annotation properties
@@ -242,7 +242,7 @@ xsd:string rdf:type rdfs:Datatype .
                                            rdfs:label "Ninox Record"@en .
 
 
-###  https://w3id.org/g17/ontology/affiliated_to_institution
+###  https://w3id.org/grace/ontology/affiliated_to_institution
 :affiliated_to_institution rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :pertains_to ;
                            rdfs:domain [ rdf:type owl:Class ;
@@ -254,7 +254,7 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:label "affiliated to institution"@en .
 
 
-###  https://w3id.org/g17/ontology/archive_object
+###  https://w3id.org/grace/ontology/archive_object
 :archive_object rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :refers_to ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -266,7 +266,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "archive object"@en .
 
 
-###  https://w3id.org/g17/ontology/authority_by_institution
+###  https://w3id.org/grace/ontology/authority_by_institution
 :authority_by_institution rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :in_capacity_of ;
                           rdfs:domain :event ;
@@ -275,7 +275,7 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:label "authority by institution"@en .
 
 
-###  https://w3id.org/g17/ontology/benefice_category
+###  https://w3id.org/grace/ontology/benefice_category
 :benefice_category rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :type_assigned ;
                    rdfs:domain :object ;
@@ -284,7 +284,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "benefice category"@en .
 
 
-###  https://w3id.org/g17/ontology/benefice_taxation
+###  https://w3id.org/grace/ontology/benefice_taxation
 :benefice_taxation rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :has_monetary_value ;
                    rdfs:domain :event ;
@@ -293,7 +293,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "benefice taxation"@en .
 
 
-###  https://w3id.org/g17/ontology/benefice_title
+###  https://w3id.org/grace/ontology/benefice_title
 :benefice_title rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :dedicated_to ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -306,7 +306,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "benefice title"@en .
 
 
-###  https://w3id.org/g17/ontology/biography_event
+###  https://w3id.org/grace/ontology/biography_event
 :biography_event rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :participates_in ;
                  owl:inverseOf :biography_subject ;
@@ -315,7 +315,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "biography event"@en .
 
 
-###  https://w3id.org/g17/ontology/biography_subject
+###  https://w3id.org/grace/ontology/biography_subject
 :biography_subject rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :has_participant ;
                    rdfs:domain :biographical_event ;
@@ -324,7 +324,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "biography subject"@en .
 
 
-###  https://w3id.org/g17/ontology/birth_place
+###  https://w3id.org/grace/ontology/birth_place
 :birth_place rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :related_to_place ;
              rdfs:domain :person ;
@@ -333,7 +333,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "birth place"@en .
 
 
-###  https://w3id.org/g17/ontology/broader
+###  https://w3id.org/grace/ontology/broader
 :broader rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :type_object ;
          rdf:type owl:TransitiveProperty ;
@@ -342,7 +342,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "broader"@en .
 
 
-###  https://w3id.org/g17/ontology/cardinal_with_duties
+###  https://w3id.org/grace/ontology/cardinal_with_duties
 :cardinal_with_duties rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :has_participant ;
                       rdfs:domain :event ;
@@ -351,7 +351,7 @@ xsd:string rdf:type rdfs:Datatype .
                       rdfs:label "cardinal with duties"@en .
 
 
-###  https://w3id.org/g17/ontology/cardinal_with_indult
+###  https://w3id.org/grace/ontology/cardinal_with_indult
 :cardinal_with_indult rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :has_participant ;
                       rdfs:domain :event ;
@@ -360,7 +360,7 @@ xsd:string rdf:type rdfs:Datatype .
                       rdfs:label "cardinal with indult"@en .
 
 
-###  https://w3id.org/g17/ontology/care_of_souls
+###  https://w3id.org/grace/ontology/care_of_souls
 :care_of_souls rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :type_assigned ;
                rdfs:domain :object ;
@@ -369,7 +369,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "care of souls"@en .
 
 
-###  https://w3id.org/g17/ontology/church_category
+###  https://w3id.org/grace/ontology/church_category
 :church_category rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :type_assigned ;
                  rdfs:domain :object ;
@@ -378,7 +378,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "church category"@en .
 
 
-###  https://w3id.org/g17/ontology/church_title
+###  https://w3id.org/grace/ontology/church_title
 :church_title rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :dedicated_to ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -391,7 +391,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "church title"@en .
 
 
-###  https://w3id.org/g17/ontology/competitor
+###  https://w3id.org/grace/ontology/competitor
 :competitor rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :has_participant ;
             rdfs:domain :event ;
@@ -400,7 +400,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "competitor"@en .
 
 
-###  https://w3id.org/g17/ontology/confidence
+###  https://w3id.org/grace/ontology/confidence
 :confidence rdf:type owl:ObjectProperty ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( <https://g17.dhi-roma.it/raw/information_object>
@@ -411,7 +411,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "confidence"@en .
 
 
-###  https://w3id.org/g17/ontology/contains
+###  https://w3id.org/grace/ontology/contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :place_object ;
           rdfs:domain :place ;
@@ -419,7 +419,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "contains"@en .
 
 
-###  https://w3id.org/g17/ontology/currency
+###  https://w3id.org/grace/ontology/currency
 :currency rdf:type owl:ObjectProperty ;
           rdfs:domain :monetary_value ;
           rdfs:range :type ;
@@ -427,7 +427,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "currency"@en .
 
 
-###  https://w3id.org/g17/ontology/current_possessor
+###  https://w3id.org/grace/ontology/current_possessor
 :current_possessor rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :has_participant ;
                    rdfs:domain :event ;
@@ -436,7 +436,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "current possessor"@en .
 
 
-###  https://w3id.org/g17/ontology/date_object
+###  https://w3id.org/grace/ontology/date_object
 :date_object rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :refers_to ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -447,7 +447,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:range :date .
 
 
-###  https://w3id.org/g17/ontology/deceased_in_rome
+###  https://w3id.org/grace/ontology/deceased_in_rome
 :deceased_in_rome rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :type_assigned ;
                   rdfs:domain :event ;
@@ -456,7 +456,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "deceased in Rome"@en .
 
 
-###  https://w3id.org/g17/ontology/decided_by
+###  https://w3id.org/grace/ontology/decided_by
 :decided_by rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :has_participant ;
             rdfs:domain :event ;
@@ -465,7 +465,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "decided by"@en .
 
 
-###  https://w3id.org/g17/ontology/dedicated_to
+###  https://w3id.org/grace/ontology/dedicated_to
 :dedicated_to rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :dedication_object ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -478,7 +478,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "dedicated to"@en .
 
 
-###  https://w3id.org/g17/ontology/dedication_object
+###  https://w3id.org/grace/ontology/dedication_object
 :dedication_object rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :refers_to ;
                    rdfs:domain [ rdf:type owl:Class ;
@@ -491,7 +491,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "dedication object"@en .
 
 
-###  https://w3id.org/g17/ontology/dedication_of
+###  https://w3id.org/grace/ontology/dedication_of
 :dedication_of rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :institution_object ;
                rdfs:domain :dedication ;
@@ -499,7 +499,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "dedication of"@en .
 
 
-###  https://w3id.org/g17/ontology/dedication_scope
+###  https://w3id.org/grace/ontology/dedication_scope
 :dedication_scope rdf:type owl:ObjectProperty ;
                   rdfs:domain :dedication ;
                   rdfs:range :type ;
@@ -507,7 +507,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "dedication scope"@en .
 
 
-###  https://w3id.org/g17/ontology/described_by_entity
+###  https://w3id.org/grace/ontology/described_by_entity
 :described_by_entity rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :refers_to ;
                      rdfs:domain [ rdf:type owl:Class ;
@@ -519,7 +519,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "described by entity"@en .
 
 
-###  https://w3id.org/g17/ontology/disambiguation_of_a_location_of_an_institution
+###  https://w3id.org/grace/ontology/disambiguation_of_a_location_of_an_institution
 :disambiguation_of_a_location_of_an_institution rdf:type owl:ObjectProperty ;
                                                 rdfs:subPropertyOf :related_to_place ;
                                                 rdfs:domain :object ;
@@ -528,7 +528,7 @@ xsd:string rdf:type rdfs:Datatype .
                                                 rdfs:label "disambiguation of a location of an institution"@en .
 
 
-###  https://w3id.org/g17/ontology/earthworks
+###  https://w3id.org/grace/ontology/earthworks
 :earthworks rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :lod ;
             rdfs:domain :anything ;
@@ -537,7 +537,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "EarthWorks"@en .
 
 
-###  https://w3id.org/g17/ontology/entry_object
+###  https://w3id.org/grace/ontology/entry_object
 :entry_object rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :refers_to ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -550,7 +550,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "entry object"@en .
 
 
-###  https://w3id.org/g17/ontology/event_date
+###  https://w3id.org/grace/ontology/event_date
 :event_date rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :has_time_span ;
             rdfs:domain :event ;
@@ -559,7 +559,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "event date"@en .
 
 
-###  https://w3id.org/g17/ontology/event_described_by_entity
+###  https://w3id.org/grace/ontology/event_described_by_entity
 :event_described_by_entity rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :refers_to ;
                            rdfs:domain :event ;
@@ -567,7 +567,7 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:label "event described by entity"@en .
 
 
-###  https://w3id.org/g17/ontology/event_object
+###  https://w3id.org/grace/ontology/event_object
 :event_object rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :refers_to ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -583,7 +583,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "event object"@en .
 
 
-###  https://w3id.org/g17/ontology/event_related_to_event
+###  https://w3id.org/grace/ontology/event_related_to_event
 :event_related_to_event rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :event_object ;
                         rdf:type owl:SymmetricProperty ;
@@ -592,7 +592,7 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:label "event related to event"@en .
 
 
-###  https://w3id.org/g17/ontology/event_related_to_object
+###  https://w3id.org/grace/ontology/event_related_to_object
 :event_related_to_object rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :object_object ;
                          rdfs:domain :event ;
@@ -600,7 +600,7 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:label "event related to object"@en .
 
 
-###  https://w3id.org/g17/ontology/executor
+###  https://w3id.org/grace/ontology/executor
 :executor rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :has_participant ;
           rdfs:domain :event ;
@@ -609,7 +609,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "executor"@en .
 
 
-###  https://w3id.org/g17/ontology/expedition_date
+###  https://w3id.org/grace/ontology/expedition_date
 :expedition_date rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :has_time_span ;
                  rdfs:domain :event ;
@@ -618,7 +618,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "expedition date"@en .
 
 
-###  https://w3id.org/g17/ontology/falls_within
+###  https://w3id.org/grace/ontology/falls_within
 :falls_within rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :place_object ;
               owl:inverseOf :contains ;
@@ -627,7 +627,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "falls within"@en .
 
 
-###  https://w3id.org/g17/ontology/falls_within_calculated
+###  https://w3id.org/grace/ontology/falls_within_calculated
 :falls_within_calculated rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :place_object ;
                          rdfs:domain :place ;
@@ -635,7 +635,7 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:label "falls within calculated"@en .
 
 
-###  https://w3id.org/g17/ontology/falls_within_custom
+###  https://w3id.org/grace/ontology/falls_within_custom
 :falls_within_custom rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :place_object ;
                      rdfs:domain :place ;
@@ -643,7 +643,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "falls within custom"@en .
 
 
-###  https://w3id.org/g17/ontology/for_church
+###  https://w3id.org/grace/ontology/for_church
 :for_church rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :pertains_to ;
             rdfs:domain :object ;
@@ -652,7 +652,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "for church"@en .
 
 
-###  https://w3id.org/g17/ontology/former_possessor
+###  https://w3id.org/grace/ontology/former_possessor
 :former_possessor rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :has_participant ;
                   rdfs:domain :event ;
@@ -661,16 +661,17 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "former possessor"@en .
 
 
-###  https://w3id.org/g17/ontology/governs
+###  https://w3id.org/grace/ontology/governs
 :governs rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :institution_object ;
+         owl:inverseOf :under_jurisdiction ;
          rdf:type owl:TransitiveProperty ;
          rdfs:domain :institution ;
          rdfs:range :institution ;
          rdfs:label "governs"@en .
 
 
-###  https://w3id.org/g17/ontology/grace_stakeholder
+###  https://w3id.org/grace/ontology/grace_stakeholder
 :grace_stakeholder rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :participates_in ;
                    owl:inverseOf :biography_subject ;
@@ -680,7 +681,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "grace stakeholder"@en .
 
 
-###  https://w3id.org/g17/ontology/has_main_type
+###  https://w3id.org/grace/ontology/has_main_type
 :has_main_type rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :type_object ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -704,7 +705,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "has main type"@en .
 
 
-###  https://w3id.org/g17/ontology/has_monetary_value
+###  https://w3id.org/grace/ontology/has_monetary_value
 :has_monetary_value rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :money_object ;
                     rdfs:domain :event ;
@@ -712,7 +713,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "has monetary value"@en .
 
 
-###  https://w3id.org/g17/ontology/has_option
+###  https://w3id.org/grace/ontology/has_option
 :has_option rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :refers_to ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -735,7 +736,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "has option"@en .
 
 
-###  https://w3id.org/g17/ontology/has_participant
+###  https://w3id.org/grace/ontology/has_participant
 :has_participant rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :person_object ;
                  rdfs:domain :event ;
@@ -743,7 +744,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "has participant"@en .
 
 
-###  https://w3id.org/g17/ontology/has_territory
+###  https://w3id.org/grace/ontology/has_territory
 :has_territory rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :place_object ;
                rdfs:domain :institution ;
@@ -751,7 +752,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "has territory"@en .
 
 
-###  https://w3id.org/g17/ontology/has_time_span
+###  https://w3id.org/grace/ontology/has_time_span
 :has_time_span rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :date_object ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -764,7 +765,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "has time span"@en .
 
 
-###  https://w3id.org/g17/ontology/has_top_term
+###  https://w3id.org/grace/ontology/has_top_term
 :has_top_term rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :type_object ;
               rdfs:domain :type ;
@@ -772,7 +773,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "has top term"@en .
 
 
-###  https://w3id.org/g17/ontology/holds_object
+###  https://w3id.org/grace/ontology/holds_object
 :holds_object rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :object_object ;
               rdfs:domain :institution ;
@@ -781,7 +782,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "holds object"@en .
 
 
-###  https://w3id.org/g17/ontology/holds_office
+###  https://w3id.org/grace/ontology/holds_office
 :holds_office rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :type_assigned ;
               rdfs:domain :biographical_event ;
@@ -790,14 +791,14 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "holds office"@en .
 
 
-###  https://w3id.org/g17/ontology/id_type
+###  https://w3id.org/grace/ontology/id_type
 :id_type rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :has_main_type ;
          rdfs:range :type ;
          rdfs:label "id type"@en .
 
 
-###  https://w3id.org/g17/ontology/identifier_object
+###  https://w3id.org/grace/ontology/identifier_object
 :identifier_object rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :refers_to ;
                    rdfs:domain :anything ;
@@ -805,14 +806,14 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "identifier object"@en .
 
 
-###  https://w3id.org/g17/ontology/identifies
+###  https://w3id.org/grace/ontology/identifies
 :identifies rdf:type owl:ObjectProperty ;
             rdfs:domain :description ;
             rdfs:range :anything ;
             rdfs:label "identifies"@en .
 
 
-###  https://w3id.org/g17/ontology/ids
+###  https://w3id.org/grace/ontology/ids
 :ids rdf:type owl:ObjectProperty ;
      rdfs:subPropertyOf :identifier_object ;
      rdfs:domain :anything ;
@@ -820,7 +821,7 @@ xsd:string rdf:type rdfs:Datatype .
      rdfs:label "ids"@en .
 
 
-###  https://w3id.org/g17/ontology/in_archive
+###  https://w3id.org/grace/ontology/in_archive
 :in_archive rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :archive_object ;
             rdfs:domain :source ;
@@ -828,7 +829,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "in archive"@en .
 
 
-###  https://w3id.org/g17/ontology/in_capacity_of
+###  https://w3id.org/grace/ontology/in_capacity_of
 :in_capacity_of rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :institution_object ;
                 rdfs:domain :event ;
@@ -836,7 +837,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "in capacity of"@en .
 
 
-###  https://w3id.org/g17/ontology/in_deanery
+###  https://w3id.org/grace/ontology/in_deanery
 :in_deanery rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :pertains_to ;
             rdfs:domain :object ;
@@ -845,7 +846,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "in deanery"@en .
 
 
-###  https://w3id.org/g17/ontology/in_diocese
+###  https://w3id.org/grace/ontology/in_diocese
 :in_diocese rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :pertains_to ;
             rdfs:domain :object ;
@@ -854,7 +855,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "in diocese"@en .
 
 
-###  https://w3id.org/g17/ontology/in_ecclesiastical_province
+###  https://w3id.org/grace/ontology/in_ecclesiastical_province
 :in_ecclesiastical_province rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :pertains_to ;
                             rdfs:domain :object ;
@@ -863,7 +864,7 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:label "in ecclesiastical province"@en .
 
 
-###  https://w3id.org/g17/ontology/in_source
+###  https://w3id.org/grace/ontology/in_source
 :in_source rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :source_object ;
            rdfs:domain :entry ;
@@ -871,7 +872,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "in source"@en .
 
 
-###  https://w3id.org/g17/ontology/in_subregister
+###  https://w3id.org/grace/ontology/in_subregister
 :in_subregister rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :type_object ;
                 rdfs:domain :entry ;
@@ -879,7 +880,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "in subregister"@en .
 
 
-###  https://w3id.org/g17/ontology/in_thesaurus
+###  https://w3id.org/grace/ontology/in_thesaurus
 :in_thesaurus rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :type_object ;
               rdfs:domain :type ;
@@ -887,7 +888,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "in thesaurus"@en .
 
 
-###  https://w3id.org/g17/ontology/in_vicariate
+###  https://w3id.org/grace/ontology/in_vicariate
 :in_vicariate rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :pertains_to ;
               rdfs:domain :object ;
@@ -896,7 +897,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "in vicariate"@en .
 
 
-###  https://w3id.org/g17/ontology/informal_patron
+###  https://w3id.org/grace/ontology/informal_patron
 :informal_patron rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :has_participant ;
                  rdfs:domain :event ;
@@ -905,7 +906,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "informal patron"@en .
 
 
-###  https://w3id.org/g17/ontology/institution_object
+###  https://w3id.org/grace/ontology/institution_object
 :institution_object rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :refers_to ;
                     rdfs:domain [ rdf:type owl:Class ;
@@ -923,7 +924,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "institution object"@en .
 
 
-###  https://w3id.org/g17/ontology/kinship
+###  https://w3id.org/grace/ontology/kinship
 :kinship rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :person_object ;
          rdf:type owl:SymmetricProperty ;
@@ -933,7 +934,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "kinship"@en .
 
 
-###  https://w3id.org/g17/ontology/legal_patron
+###  https://w3id.org/grace/ontology/legal_patron
 :legal_patron rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :has_participant ;
               rdfs:domain :event ;
@@ -942,7 +943,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "legal patron"@en .
 
 
-###  https://w3id.org/g17/ontology/location_of_an_institution
+###  https://w3id.org/grace/ontology/location_of_an_institution
 :location_of_an_institution rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :related_to_place ;
                             rdfs:domain :object ;
@@ -951,14 +952,14 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:label "location of an institution"@en .
 
 
-###  https://w3id.org/g17/ontology/lod
+###  https://w3id.org/grace/ontology/lod
 :lod rdf:type owl:ObjectProperty ;
      rdfs:domain :anything ;
      rdfs:range xsd:anyURI ;
      rdfs:label "LOD"@en .
 
 
-###  https://w3id.org/g17/ontology/monetary_value_normalized
+###  https://w3id.org/grace/ontology/monetary_value_normalized
 :monetary_value_normalized rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :has_main_type ;
                            rdfs:domain :monetary_value ;
@@ -967,7 +968,7 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:label "monetary value normalized"@en .
 
 
-###  https://w3id.org/g17/ontology/money_object
+###  https://w3id.org/grace/ontology/money_object
 :money_object rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :refers_to ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -979,7 +980,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:range :monetary_value .
 
 
-###  https://w3id.org/g17/ontology/narrower
+###  https://w3id.org/grace/ontology/narrower
 :narrower rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :type_object ;
           rdf:type owl:TransitiveProperty ;
@@ -988,7 +989,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "narrower"@en .
 
 
-###  https://w3id.org/g17/ontology/object_described_by_entity
+###  https://w3id.org/grace/ontology/object_described_by_entity
 :object_described_by_entity rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :refers_to ;
                             rdfs:domain :object ;
@@ -996,7 +997,7 @@ xsd:string rdf:type rdfs:Datatype .
                             rdfs:label "object described by entity"@en .
 
 
-###  https://w3id.org/g17/ontology/object_object
+###  https://w3id.org/grace/ontology/object_object
 :object_object rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :refers_to ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1010,7 +1011,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "object object"@en .
 
 
-###  https://w3id.org/g17/ontology/object_related_to_event
+###  https://w3id.org/grace/ontology/object_related_to_event
 :object_related_to_event rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :event_object ;
                          owl:inverseOf :event_related_to_object ;
@@ -1019,7 +1020,7 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:label "object related to event"@en .
 
 
-###  https://w3id.org/g17/ontology/object_related_to_object
+###  https://w3id.org/grace/ontology/object_related_to_object
 :object_related_to_object rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :object_object ;
                           rdf:type owl:SymmetricProperty ;
@@ -1029,7 +1030,7 @@ xsd:string rdf:type rdfs:Datatype .
                           rdfs:label "object related to object"@en .
 
 
-###  https://w3id.org/g17/ontology/object_related_to_object_directed
+###  https://w3id.org/grace/ontology/object_related_to_object_directed
 :object_related_to_object_directed rdf:type owl:ObjectProperty ;
                                    rdfs:subPropertyOf :object_object ;
                                    rdfs:domain :object ;
@@ -1038,7 +1039,7 @@ xsd:string rdf:type rdfs:Datatype .
                                    rdfs:label "object related to object directed"@en .
 
 
-###  https://w3id.org/g17/ontology/participates_in
+###  https://w3id.org/grace/ontology/participates_in
 :participates_in rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :event_object ;
                  rdfs:domain :person ;
@@ -1046,7 +1047,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "participates in"@en .
 
 
-###  https://w3id.org/g17/ontology/patronage_type
+###  https://w3id.org/grace/ontology/patronage_type
 :patronage_type rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :type_assigned ;
                 rdfs:domain :object ;
@@ -1055,7 +1056,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "patronage type"@en .
 
 
-###  https://w3id.org/g17/ontology/pension_value
+###  https://w3id.org/grace/ontology/pension_value
 :pension_value rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :has_monetary_value ;
                rdfs:domain :event ;
@@ -1064,7 +1065,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "pension value"@en .
 
 
-###  https://w3id.org/g17/ontology/person_object
+###  https://w3id.org/grace/ontology/person_object
 :person_object rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :refers_to ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1082,7 +1083,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "person object"@en .
 
 
-###  https://w3id.org/g17/ontology/pertains_to
+###  https://w3id.org/grace/ontology/pertains_to
 :pertains_to rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :institution_object ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -1094,7 +1095,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "pertains to"@en .
 
 
-###  https://w3id.org/g17/ontology/place_information_within_church_name
+###  https://w3id.org/grace/ontology/place_information_within_church_name
 :place_information_within_church_name rdf:type owl:ObjectProperty ;
                                       rdfs:subPropertyOf :related_to_place ;
                                       rdfs:domain :object ;
@@ -1103,7 +1104,7 @@ xsd:string rdf:type rdfs:Datatype .
                                       rdfs:label "place information within church name"@en .
 
 
-###  https://w3id.org/g17/ontology/place_object
+###  https://w3id.org/grace/ontology/place_object
 :place_object rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :refers_to ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -1119,7 +1120,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "place object"@en .
 
 
-###  https://w3id.org/g17/ontology/place_of_event
+###  https://w3id.org/grace/ontology/place_of_event
 :place_of_event rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :related_to_place ;
                 rdfs:domain :event ;
@@ -1128,7 +1129,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "place of event"@en .
 
 
-###  https://w3id.org/g17/ontology/primary_place
+###  https://w3id.org/grace/ontology/primary_place
 :primary_place rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :place_object ;
                rdfs:domain :institution ;
@@ -1136,7 +1137,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "primary place"@en .
 
 
-###  https://w3id.org/g17/ontology/providee
+###  https://w3id.org/grace/ontology/providee
 :providee rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :has_participant ;
           rdfs:domain :event ;
@@ -1145,7 +1146,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "providee"@en .
 
 
-###  https://w3id.org/g17/ontology/provision_subform
+###  https://w3id.org/grace/ontology/provision_subform
 :provision_subform rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :type_assigned ;
                    rdfs:domain :event ;
@@ -1154,7 +1155,7 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "provision subform"@en .
 
 
-###  https://w3id.org/g17/ontology/provision_type
+###  https://w3id.org/grace/ontology/provision_type
 :provision_type rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :type_assigned ;
                 rdfs:domain :event ;
@@ -1163,7 +1164,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "provision type"@en .
 
 
-###  https://w3id.org/g17/ontology/refers_to
+###  https://w3id.org/grace/ontology/refers_to
 :refers_to rdf:type owl:ObjectProperty ;
            rdfs:domain :anything ;
            rdfs:range :anything ;
@@ -1171,14 +1172,14 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "refers to"@en .
 
 
-###  https://w3id.org/g17/ontology/regards
+###  https://w3id.org/grace/ontology/regards
 :regards rdf:type owl:ObjectProperty ;
          rdfs:domain :description ;
          rdfs:range :type ;
          rdfs:label "regards"@en .
 
 
-###  https://w3id.org/g17/ontology/regular_benefice
+###  https://w3id.org/grace/ontology/regular_benefice
 :regular_benefice rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :type_assigned ;
                   rdfs:domain :object ;
@@ -1187,7 +1188,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "regular benefice"@en .
 
 
-###  https://w3id.org/g17/ontology/related_institution
+###  https://w3id.org/grace/ontology/related_institution
 :related_institution rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :pertains_to ;
                      rdfs:domain :biographical_event ;
@@ -1196,7 +1197,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "related institution"@en .
 
 
-###  https://w3id.org/g17/ontology/related_to_place
+###  https://w3id.org/grace/ontology/related_to_place
 :related_to_place rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :place_object ;
                   rdfs:domain [ rdf:type owl:Class ;
@@ -1211,7 +1212,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "related to place"@en .
 
 
-###  https://w3id.org/g17/ontology/related_to_saint
+###  https://w3id.org/grace/ontology/related_to_saint
 :related_to_saint rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :dedication_object ;
                   rdfs:domain :dedication ;
@@ -1219,7 +1220,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "related to saint"@en .
 
 
-###  https://w3id.org/g17/ontology/religious_order
+###  https://w3id.org/grace/ontology/religious_order
 :religious_order rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :type_assigned ;
                  rdfs:domain [ rdf:type owl:Class ;
@@ -1233,7 +1234,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "religious order"@en .
 
 
-###  https://w3id.org/g17/ontology/residence
+###  https://w3id.org/grace/ontology/residence
 :residence rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf :type_assigned ;
            rdfs:domain :object ;
@@ -1242,7 +1243,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "residence"@en .
 
 
-###  https://w3id.org/g17/ontology/source_object
+###  https://w3id.org/grace/ontology/source_object
 :source_object rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :refers_to ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1255,7 +1256,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "source object"@en .
 
 
-###  https://w3id.org/g17/ontology/source_subregister
+###  https://w3id.org/grace/ontology/source_subregister
 :source_subregister rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :structured_by ;
                     rdfs:domain :event ;
@@ -1264,7 +1265,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "source subregister"@en .
 
 
-###  https://w3id.org/g17/ontology/structured_by
+###  https://w3id.org/grace/ontology/structured_by
 :structured_by rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :type_object ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1277,7 +1278,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "structured by"@en .
 
 
-###  https://w3id.org/g17/ontology/testified_by
+###  https://w3id.org/grace/ontology/testified_by
 :testified_by rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :entry_object ;
               rdfs:domain [ rdf:type owl:Class ;
@@ -1289,7 +1290,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "testified by"@en .
 
 
-###  https://w3id.org/g17/ontology/testifies_to
+###  https://w3id.org/grace/ontology/testifies_to
 :testifies_to rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :refers_to ;
               owl:inverseOf :testified_by ;
@@ -1303,7 +1304,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "testifies to"@en .
 
 
-###  https://w3id.org/g17/ontology/testifies_to_event
+###  https://w3id.org/grace/ontology/testifies_to_event
 :testifies_to_event rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :event_object ,
                                        :testifies_to ;
@@ -1313,7 +1314,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "testifies to event"@en .
 
 
-###  https://w3id.org/g17/ontology/testifies_to_object
+###  https://w3id.org/grace/ontology/testifies_to_object
 :testifies_to_object rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :object_object ,
                                         :testifies_to ;
@@ -1323,7 +1324,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "testifies to object"@en .
 
 
-###  https://w3id.org/g17/ontology/top_term_of_thesaurus
+###  https://w3id.org/grace/ontology/top_term_of_thesaurus
 :top_term_of_thesaurus rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :type_object ;
                        rdfs:domain :type ;
@@ -1331,7 +1332,7 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:label "top term of thesaurus"@en .
 
 
-###  https://w3id.org/g17/ontology/type_assigned
+###  https://w3id.org/grace/ontology/type_assigned
 :type_assigned rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :type_object ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1343,7 +1344,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "type assigned"@en .
 
 
-###  https://w3id.org/g17/ontology/type_object
+###  https://w3id.org/grace/ontology/type_object
 :type_object rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :refers_to ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -1367,7 +1368,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "type object"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_archive
+###  https://w3id.org/grace/ontology/type_of_archive
 :type_of_archive rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :has_main_type ;
                  rdfs:domain :archive ;
@@ -1376,7 +1377,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "type of archive"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_dedication
+###  https://w3id.org/grace/ontology/type_of_dedication
 :type_of_dedication rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :has_main_type ;
                     rdfs:domain :dedication ;
@@ -1385,7 +1386,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "type of dedication"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_entry
+###  https://w3id.org/grace/ontology/type_of_entry
 :type_of_entry rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :has_main_type ;
                rdfs:domain :entry ;
@@ -1394,7 +1395,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "type of entry"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_event
+###  https://w3id.org/grace/ontology/type_of_event
 :type_of_event rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :has_main_type ;
                rdfs:domain :event ;
@@ -1403,7 +1404,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "type of event"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_institution
+###  https://w3id.org/grace/ontology/type_of_institution
 :type_of_institution rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :has_main_type ;
                      rdfs:domain :institution ;
@@ -1412,7 +1413,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "type of institution"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_object
+###  https://w3id.org/grace/ontology/type_of_object
 :type_of_object rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :has_main_type ;
                 rdfs:domain :object ;
@@ -1421,7 +1422,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "type of object"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_person
+###  https://w3id.org/grace/ontology/type_of_person
 :type_of_person rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :has_main_type ;
                 rdfs:domain :person ;
@@ -1430,7 +1431,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "type of person"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_place
+###  https://w3id.org/grace/ontology/type_of_place
 :type_of_place rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :has_main_type ;
                rdfs:domain :place ;
@@ -1439,7 +1440,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "type of place"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_source
+###  https://w3id.org/grace/ontology/type_of_source
 :type_of_source rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :has_main_type ;
                 rdfs:domain :source ;
@@ -1448,7 +1449,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "type of source"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_type
+###  https://w3id.org/grace/ontology/type_of_type
 :type_of_type rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :has_main_type ;
               rdfs:domain :type ;
@@ -1456,17 +1457,16 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "type of type"@en .
 
 
-###  https://w3id.org/g17/ontology/under_jurisdiction
+###  https://w3id.org/grace/ontology/under_jurisdiction
 :under_jurisdiction rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :institution_object ;
-                    owl:inverseOf :governs ;
                     rdf:type owl:TransitiveProperty ;
                     rdfs:domain :institution ;
                     rdfs:range :institution ;
                     rdfs:label "under jurisdiction"@en .
 
 
-###  https://w3id.org/g17/ontology/vacancy_category
+###  https://w3id.org/grace/ontology/vacancy_category
 :vacancy_category rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :type_assigned ;
                   rdfs:domain :event ;
@@ -1475,7 +1475,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "vacancy category"@en .
 
 
-###  https://w3id.org/g17/ontology/vacancy_date
+###  https://w3id.org/grace/ontology/vacancy_date
 :vacancy_date rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :has_time_span ;
               rdfs:domain :event ;
@@ -1484,7 +1484,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "vacancy date"@en .
 
 
-###  https://w3id.org/g17/ontology/wikidata
+###  https://w3id.org/grace/ontology/wikidata
 :wikidata rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :lod ;
           rdfs:domain :anything ;
@@ -1548,7 +1548,7 @@ xsd:string rdf:type rdfs:Datatype .
                                             rdfs:label "transcription"@en .
 
 
-###  https://w3id.org/g17/ontology/abbreviated_name
+###  https://w3id.org/grace/ontology/abbreviated_name
 :abbreviated_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :archive_literal ;
                   rdfs:domain :archive ;
@@ -1556,7 +1556,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "abbreviated name"@en .
 
 
-###  https://w3id.org/g17/ontology/address
+###  https://w3id.org/grace/ontology/address
 :address rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :place_literal ;
          rdfs:domain [ rdf:type owl:Class ;
@@ -1568,7 +1568,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "address"@en .
 
 
-###  https://w3id.org/g17/ontology/aka
+###  https://w3id.org/grace/ontology/aka
 :aka rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf :appellation_literal ;
      rdfs:domain :anything ;
@@ -1576,7 +1576,7 @@ xsd:string rdf:type rdfs:Datatype .
      rdfs:label "aka"@en .
 
 
-###  https://w3id.org/g17/ontology/also_called
+###  https://w3id.org/grace/ontology/also_called
 :also_called rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :appellation_literal ;
              rdfs:domain :anything ;
@@ -1584,14 +1584,14 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "also called"@en .
 
 
-###  https://w3id.org/g17/ontology/appellation_literal
+###  https://w3id.org/grace/ontology/appellation_literal
 :appellation_literal rdf:type owl:DatatypeProperty ;
                      rdfs:domain :anything ;
                      rdfs:range rdfs:Literal ;
                      rdfs:label "appellation literal"@en .
 
 
-###  https://w3id.org/g17/ontology/archive_literal
+###  https://w3id.org/grace/ontology/archive_literal
 :archive_literal rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :appellation_literal ;
                  rdfs:domain :archive ;
@@ -1599,7 +1599,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "archive literal"@en .
 
 
-###  https://w3id.org/g17/ontology/archive_name
+###  https://w3id.org/grace/ontology/archive_name
 :archive_name rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :archive_literal ;
               rdfs:domain :archive ;
@@ -1607,7 +1607,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "archive name"@en .
 
 
-###  https://w3id.org/g17/ontology/called
+###  https://w3id.org/grace/ontology/called
 :called rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf :appellation_literal ;
         rdfs:domain :anything ;
@@ -1616,7 +1616,7 @@ xsd:string rdf:type rdfs:Datatype .
         rdfs:label "called"@en .
 
 
-###  https://w3id.org/g17/ontology/context_explanation
+###  https://w3id.org/grace/ontology/context_explanation
 :context_explanation rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :date_literal ;
                      rdfs:domain :date ;
@@ -1624,7 +1624,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "context explanation"@en .
 
 
-###  https://w3id.org/g17/ontology/contributor_literal
+###  https://w3id.org/grace/ontology/contributor_literal
 :contributor_literal rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :appellation_literal ;
                      rdfs:domain <http://www.w3.org/ns/prov#person> ;
@@ -1632,7 +1632,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "contributor literal"@en .
 
 
-###  https://w3id.org/g17/ontology/contributor_name
+###  https://w3id.org/grace/ontology/contributor_name
 :contributor_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :contributor_literal ;
                   rdfs:domain :contributor ;
@@ -1640,7 +1640,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "contributor name"@en .
 
 
-###  https://w3id.org/g17/ontology/cool_id
+###  https://w3id.org/grace/ontology/cool_id
 :cool_id rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :identifier_literal ;
          rdfs:domain :anything ;
@@ -1648,7 +1648,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "cool id"@en .
 
 
-###  https://w3id.org/g17/ontology/date_literal
+###  https://w3id.org/grace/ontology/date_literal
 :date_literal rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :appellation_literal ;
               rdfs:domain :date ;
@@ -1656,11 +1656,11 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "date literal"@en .
 
 
-###  https://w3id.org/g17/ontology/date_object
+###  https://w3id.org/grace/ontology/date_object
 :date_object rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/g17/ontology/dedication_literal
+###  https://w3id.org/grace/ontology/dedication_literal
 :dedication_literal rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :appellation_literal ;
                     rdfs:domain :dedication ;
@@ -1668,7 +1668,7 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "dedication literal"@en .
 
 
-###  https://w3id.org/g17/ontology/dimensions
+###  https://w3id.org/grace/ontology/dimensions
 :dimensions rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :source_literal ;
             rdfs:domain :source ;
@@ -1676,7 +1676,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "dimensions"@en .
 
 
-###  https://w3id.org/g17/ontology/ended
+###  https://w3id.org/grace/ontology/ended
 :ended rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf :date_literal ;
        rdfs:domain :date ;
@@ -1684,7 +1684,7 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "ended"@en .
 
 
-###  https://w3id.org/g17/ontology/entry_literal
+###  https://w3id.org/grace/ontology/entry_literal
 :entry_literal rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :appellation_literal ;
                rdfs:domain :entry ;
@@ -1692,7 +1692,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "entry literal"@en .
 
 
-###  https://w3id.org/g17/ontology/example
+###  https://w3id.org/grace/ontology/example
 :example rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :type_literal ;
          rdfs:domain :type ;
@@ -1700,7 +1700,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "example"@en .
 
 
-###  https://w3id.org/g17/ontology/family_name
+###  https://w3id.org/grace/ontology/family_name
 :family_name rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :person_literal ;
              rdfs:domain :person ;
@@ -1708,7 +1708,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "family name"@en .
 
 
-###  https://w3id.org/g17/ontology/fixed_amount
+###  https://w3id.org/grace/ontology/fixed_amount
 :fixed_amount rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :money_literal ;
               rdfs:domain :monetary_value ;
@@ -1716,7 +1716,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "fixed amount"@en .
 
 
-###  https://w3id.org/g17/ontology/floating_amount
+###  https://w3id.org/grace/ontology/floating_amount
 :floating_amount rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :money_literal ;
                  rdfs:domain :monetary_value ;
@@ -1724,7 +1724,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "floating amount"@en .
 
 
-###  https://w3id.org/g17/ontology/folio
+###  https://w3id.org/grace/ontology/folio
 :folio rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf :entry_literal ;
        rdfs:domain :entry ;
@@ -1732,7 +1732,7 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "folio"@en .
 
 
-###  https://w3id.org/g17/ontology/full_name
+###  https://w3id.org/grace/ontology/full_name
 :full_name rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :person_literal ;
            rdfs:domain :person ;
@@ -1740,7 +1740,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "full name"@en .
 
 
-###  https://w3id.org/g17/ontology/geometry
+###  https://w3id.org/grace/ontology/geometry
 :geometry rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :place_literal ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -1753,7 +1753,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "geometry"@en .
 
 
-###  https://w3id.org/g17/ontology/given_name
+###  https://w3id.org/grace/ontology/given_name
 :given_name rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :person_literal ;
             rdfs:domain :person ;
@@ -1761,7 +1761,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "given name"@en .
 
 
-###  https://w3id.org/g17/ontology/has_id
+###  https://w3id.org/grace/ontology/has_id
 :has_id rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf :identifier_literal ;
         rdfs:domain :anything ;
@@ -1769,7 +1769,7 @@ xsd:string rdf:type rdfs:Datatype .
         rdfs:label "has id"@en .
 
 
-###  https://w3id.org/g17/ontology/identifier_literal
+###  https://w3id.org/grace/ontology/identifier_literal
 :identifier_literal rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :appellation_literal ;
                     rdfs:domain :anything ;
@@ -1777,14 +1777,14 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "identifier literal"@en .
 
 
-###  https://w3id.org/g17/ontology/institution_literal
+###  https://w3id.org/grace/ontology/institution_literal
 :institution_literal rdf:type owl:DatatypeProperty ;
                      rdfs:domain :institution ;
                      rdfs:range rdfs:Literal ;
                      rdfs:label "institution literal"@en .
 
 
-###  https://w3id.org/g17/ontology/institution_name
+###  https://w3id.org/grace/ontology/institution_name
 :institution_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf :institution_literal ;
                   rdfs:domain :institution ;
@@ -1792,7 +1792,7 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "institution name"@en .
 
 
-###  https://w3id.org/g17/ontology/level
+###  https://w3id.org/grace/ontology/level
 :level rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf :type_literal ;
        rdfs:domain :type ;
@@ -1800,7 +1800,7 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "level"@en .
 
 
-###  https://w3id.org/g17/ontology/mid_date
+###  https://w3id.org/grace/ontology/mid_date
 :mid_date rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :date_literal ;
           rdfs:domain :date ;
@@ -1808,7 +1808,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "mid date"@en .
 
 
-###  https://w3id.org/g17/ontology/money_literal
+###  https://w3id.org/grace/ontology/money_literal
 :money_literal rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :appellation_literal ;
                rdfs:domain :monetary_value ;
@@ -1817,11 +1817,11 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "money literal"@en .
 
 
-###  https://w3id.org/g17/ontology/money_object
+###  https://w3id.org/grace/ontology/money_object
 :money_object rdf:type owl:DatatypeProperty .
 
 
-###  https://w3id.org/g17/ontology/name_suffix
+###  https://w3id.org/grace/ontology/name_suffix
 :name_suffix rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :person_literal ;
              rdfs:domain :person ;
@@ -1829,7 +1829,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "name suffix"@en .
 
 
-###  https://w3id.org/g17/ontology/name_title
+###  https://w3id.org/grace/ontology/name_title
 :name_title rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :person_literal ;
             rdfs:domain :person ;
@@ -1837,7 +1837,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "name title"@en .
 
 
-###  https://w3id.org/g17/ontology/person_literal
+###  https://w3id.org/grace/ontology/person_literal
 :person_literal rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :appellation_literal ;
                 rdfs:domain :person ;
@@ -1845,7 +1845,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "person literal"@en .
 
 
-###  https://w3id.org/g17/ontology/place_literal
+###  https://w3id.org/grace/ontology/place_literal
 :place_literal rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf :appellation_literal ;
                rdfs:domain :place ;
@@ -1853,7 +1853,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "place literal"@en .
 
 
-###  https://w3id.org/g17/ontology/place_name
+###  https://w3id.org/grace/ontology/place_name
 :place_name rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :place_literal ;
             rdfs:domain :place ;
@@ -1861,7 +1861,7 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "place name"@en .
 
 
-###  https://w3id.org/g17/ontology/ranking
+###  https://w3id.org/grace/ontology/ranking
 :ranking rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :type_literal ;
          rdfs:domain :type ;
@@ -1869,7 +1869,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "ranking"@en .
 
 
-###  https://w3id.org/g17/ontology/record_id
+###  https://w3id.org/grace/ontology/record_id
 :record_id rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :identifier_literal ;
            rdfs:domain :anything ;
@@ -1878,7 +1878,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "record id"@en .
 
 
-###  https://w3id.org/g17/ontology/reference_date
+###  https://w3id.org/grace/ontology/reference_date
 :reference_date rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :date_literal ;
                 rdfs:domain :date ;
@@ -1886,7 +1886,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "reference date"@en .
 
 
-###  https://w3id.org/g17/ontology/relative_to
+###  https://w3id.org/grace/ontology/relative_to
 :relative_to rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :date_literal ;
              rdfs:domain :date ;
@@ -1894,7 +1894,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "relative to"@en .
 
 
-###  https://w3id.org/g17/ontology/schema_literal
+###  https://w3id.org/grace/ontology/schema_literal
 :schema_literal rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf :appellation_literal ;
                 rdfs:domain :schema ;
@@ -1902,7 +1902,7 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "schema literal"@en .
 
 
-###  https://w3id.org/g17/ontology/schema_name
+###  https://w3id.org/grace/ontology/schema_name
 :schema_name rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :schema_literal ;
              rdfs:domain :schema ;
@@ -1910,7 +1910,7 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "schema name"@en .
 
 
-###  https://w3id.org/g17/ontology/shelf_mark
+###  https://w3id.org/grace/ontology/shelf_mark
 :shelf_mark rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf :source_literal ;
             rdfs:domain :source ;
@@ -1918,14 +1918,14 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "shelf mark"@en .
 
 
-###  https://w3id.org/g17/ontology/source_literal
+###  https://w3id.org/grace/ontology/source_literal
 :source_literal rdf:type owl:DatatypeProperty ;
                 rdfs:domain :source ;
                 rdfs:range rdfs:Literal ;
                 rdfs:label "source literal"@en .
 
 
-###  https://w3id.org/g17/ontology/started
+###  https://w3id.org/grace/ontology/started
 :started rdf:type owl:DatatypeProperty ;
          rdfs:subPropertyOf :date_literal ;
          rdfs:domain :date ;
@@ -1933,7 +1933,7 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:label "started"@en .
 
 
-###  https://w3id.org/g17/ontology/title
+###  https://w3id.org/grace/ontology/title
 :title rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf :dedication_literal ;
        rdfs:domain :dedication ;
@@ -1941,7 +1941,7 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "title"@en .
 
 
-###  https://w3id.org/g17/ontology/transcription_preview
+###  https://w3id.org/grace/ontology/transcription_preview
 :transcription_preview rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf :entry_literal ;
                        rdfs:domain :entry ;
@@ -1949,7 +1949,7 @@ xsd:string rdf:type rdfs:Datatype .
                        rdfs:label "transcription preview"@en .
 
 
-###  https://w3id.org/g17/ontology/type_literal
+###  https://w3id.org/grace/ontology/type_literal
 :type_literal rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf :appellation_literal ;
               rdfs:domain :type ;
@@ -1957,7 +1957,7 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "type literal"@en .
 
 
-###  https://w3id.org/g17/ontology/type_name
+###  https://w3id.org/grace/ontology/type_name
 :type_name rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :type_literal ;
            rdfs:domain :type ;
@@ -1965,7 +1965,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "type name"@en .
 
 
-###  https://w3id.org/g17/ontology/type_note
+###  https://w3id.org/grace/ontology/type_note
 :type_note rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :type_literal ;
            rdfs:domain :type ;
@@ -1973,7 +1973,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "type note"@en .
 
 
-###  https://w3id.org/g17/ontology/uuid5
+###  https://w3id.org/grace/ontology/uuid5
 :uuid5 rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf :identifier_literal ;
        rdfs:domain :anything ;
@@ -1982,7 +1982,7 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "uuid5"@en .
 
 
-###  https://w3id.org/g17/ontology/wkt
+###  https://w3id.org/grace/ontology/wkt
 :wkt rdf:type owl:DatatypeProperty ;
      rdfs:subPropertyOf :place_literal ;
      rdfs:domain [ rdf:type owl:Class ;
@@ -2115,14 +2115,14 @@ xsd:string rdf:type owl:Class ;
                                        rdfs:label "Raw Data"@en .
 
 
-###  https://w3id.org/g17/ontology/abbey
+###  https://w3id.org/grace/ontology/abbey
 :abbey rdf:type owl:Class ;
        rdfs:subClassOf :seat_of_worship ;
        rdfs:comment "A type of church that houses a community of monks or nuns under the authority of an abbot or abbess, typically secluded and dedicated to monastic life." ;
        rdfs:label "Abbey"@en .
 
 
-###  https://w3id.org/g17/ontology/absolution
+###  https://w3id.org/grace/ontology/absolution
 :absolution rdf:type owl:Class ;
             rdfs:subClassOf :immaterial_object ,
                             [ rdf:type owl:Restriction ;
@@ -2133,19 +2133,19 @@ xsd:string rdf:type owl:Class ;
             rdfs:label "absolution"@en .
 
 
-###  https://w3id.org/g17/ontology/affiliation
+###  https://w3id.org/grace/ontology/affiliation
 :affiliation rdf:type owl:Class ;
              rdfs:subClassOf :career ;
              rdfs:label "affiliation"@en .
 
 
-###  https://w3id.org/g17/ontology/anything
+###  https://w3id.org/grace/ontology/anything
 :anything rdf:type owl:Class ;
           rdfs:comment "any named resource in the knowledge base" ;
           rdfs:label "anything"@en .
 
 
-###  https://w3id.org/g17/ontology/apostolic_dispensation
+###  https://w3id.org/grace/ontology/apostolic_dispensation
 :apostolic_dispensation rdf:type owl:Class ;
                         rdfs:subClassOf :papal_grace ,
                                         [ rdf:type owl:Restriction ;
@@ -2156,7 +2156,7 @@ xsd:string rdf:type owl:Class ;
                         rdfs:label "apostolic dispensation"@en .
 
 
-###  https://w3id.org/g17/ontology/apostolic_provision
+###  https://w3id.org/grace/ontology/apostolic_provision
 :apostolic_provision rdf:type owl:Class ;
                      rdfs:subClassOf :papal_grace ,
                                      [ rdf:type owl:Restriction ;
@@ -2187,28 +2187,28 @@ xsd:string rdf:type owl:Class ;
                      rdfs:label "apostolic provision"@en .
 
 
-###  https://w3id.org/g17/ontology/apostolic_supplication
+###  https://w3id.org/grace/ontology/apostolic_supplication
 :apostolic_supplication rdf:type owl:Class ;
                         rdfs:subClassOf :papal_grace ;
                         rdfs:comment "An apostolic supplication is a special exemption granted directly by the Pope or the Holy See, allowing a deviation from a Church law or regulation in exceptional circumstances. This type of supplication is typically reserved for significant matters, such as resolving impediments to marriage, relaxing canonical obligations, or addressing unique pastoral needs" ;
                         rdfs:label "apostolic supplication"@en .
 
 
-###  https://w3id.org/g17/ontology/archdeanery
+###  https://w3id.org/grace/ontology/archdeanery
 :archdeanery rdf:type owl:Class ;
              rdfs:subClassOf :institution ;
              rdfs:comment "An archdeanery is a larger or more prominent division within a diocese, typically encompassing multiple deaneries. It may be overseen by an archdean, who has a role similar to a dean but with broader responsibilities." ;
              rdfs:label "archdeanery"@en .
 
 
-###  https://w3id.org/g17/ontology/archdiocese
+###  https://w3id.org/grace/ontology/archdiocese
 :archdiocese rdf:type owl:Class ;
              rdfs:subClassOf :diocese ;
              rdfs:comment "The primary diocese of an ecclesiastical province, led by an archbishop who oversees the suffragan dioceses within the province." ;
              rdfs:label "archdiocese"@en .
 
 
-###  https://w3id.org/g17/ontology/archive
+###  https://w3id.org/grace/ontology/archive
 :archive rdf:type owl:Class ;
          rdfs:subClassOf :anything ,
                          [ rdf:type owl:Restriction ;
@@ -2222,14 +2222,14 @@ xsd:string rdf:type owl:Class ;
          rdfs:label "archive"@en .
 
 
-###  https://w3id.org/g17/ontology/basilica
+###  https://w3id.org/grace/ontology/basilica
 :basilica rdf:type owl:Class ;
           rdfs:subClassOf :seat_of_worship ;
           rdfs:comment "A church granted ceremonial privileges by the Pope, often distinguished by its architectural grandeur and historical significance, serving both liturgical and administrative roles." ;
           rdfs:label "Basilica"@en .
 
 
-###  https://w3id.org/g17/ontology/benefice
+###  https://w3id.org/grace/ontology/benefice
 :benefice rdf:type owl:Class ;
           rdfs:subClassOf :immaterial_object ,
                           [ rdf:type owl:Restriction ;
@@ -2264,7 +2264,7 @@ xsd:string rdf:type owl:Class ;
           rdfs:label "benefice"@en .
 
 
-###  https://w3id.org/g17/ontology/biographical_event
+###  https://w3id.org/grace/ontology/biographical_event
 :biographical_event rdf:type owl:Class ;
                     rdfs:subClassOf :event ,
                                     [ rdf:type owl:Restriction ;
@@ -2274,47 +2274,47 @@ xsd:string rdf:type owl:Class ;
                     rdfs:label "biographical event"@en .
 
 
-###  https://w3id.org/g17/ontology/birth
+###  https://w3id.org/grace/ontology/birth
 :birth rdf:type owl:Class ;
        rdfs:subClassOf :biographical_event ;
        rdfs:label "birth"@en .
 
 
-###  https://w3id.org/g17/ontology/cantors_house
+###  https://w3id.org/grace/ontology/cantors_house
 :cantors_house rdf:type owl:Class ;
                rdfs:subClassOf :seat_of_worship ;
                rdfs:comment "A cantor’s house historically refers to the residence of a cantor, a person responsible for leading liturgical music or chanting in a church, synagogue, or other religious setting. It could also serve as a place for rehearsing or organizing musical activities related to worship." ;
                rdfs:label "Cantor's house"@en .
 
 
-###  https://w3id.org/g17/ontology/career
+###  https://w3id.org/grace/ontology/career
 :career rdf:type owl:Class ;
         rdfs:subClassOf :biographical_event ;
         rdfs:label "career"@en .
 
 
-###  https://w3id.org/g17/ontology/cathedral
+###  https://w3id.org/grace/ontology/cathedral
 :cathedral rdf:type owl:Class ;
            rdfs:subClassOf :seat_of_worship ;
            rdfs:comment "The principal church of a diocese, housing the bishop's official seat or cathedra, central to diocesan liturgy and administration." ;
            rdfs:label "cathedral"@en .
 
 
-###  https://w3id.org/g17/ontology/chapel
+###  https://w3id.org/grace/ontology/chapel
 :chapel rdf:type owl:Class ;
         rdfs:subClassOf :seat_of_worship ;
         rdfs:comment "A small religious building, often located on private grounds or within an institution, used for worship and prayer, typically serving a specific group or community." ;
         rdfs:label "Chapel"@en .
 
 
-###  https://w3id.org/g17/ontology/church
+###  https://w3id.org/grace/ontology/church
 :church rdf:type owl:Class ;
         rdfs:subClassOf :seat_of_worship ;
         rdfs:comment "A building used for public Christian worship, typically smaller and less formal than a cathedral, serving the local community's spiritual needs." ;
         rdfs:label "church"@en .
 
 
-###  https://w3id.org/g17/ontology/coadjutary
+###  https://w3id.org/grace/ontology/coadjutary
 :coadjutary rdf:type owl:Class ;
             rdfs:subClassOf :immaterial_object ,
                             [ rdf:type owl:Restriction ;
@@ -2325,14 +2325,14 @@ xsd:string rdf:type owl:Class ;
             rdfs:label "coadjutary"@en .
 
 
-###  https://w3id.org/g17/ontology/collegiate_church
+###  https://w3id.org/grace/ontology/collegiate_church
 :collegiate_church rdf:type owl:Class ;
                    rdfs:subClassOf :seat_of_worship ;
                    rdfs:comment "A church endowed with a corporate body of clergy organized as a collegiate body, typically serving a larger community with a focus on liturgical services and choral music." ;
                    rdfs:label "Collegiate church"@en .
 
 
-###  https://w3id.org/g17/ontology/commenda
+###  https://w3id.org/grace/ontology/commenda
 :commenda rdf:type owl:Class ;
           rdfs:subClassOf :immaterial_object ,
                           [ rdf:type owl:Restriction ;
@@ -2343,93 +2343,93 @@ xsd:string rdf:type owl:Class ;
           rdfs:label "commenda"@en .
 
 
-###  https://w3id.org/g17/ontology/continent
+###  https://w3id.org/grace/ontology/continent
 :continent rdf:type owl:Class ;
            rdfs:subClassOf :place ;
            rdfs:comment "A large geographical division of the world, categorized in ecclesiastical terms for administrative and missionary purposes." ;
            rdfs:label "continent"@en .
 
 
-###  https://w3id.org/g17/ontology/contributor
+###  https://w3id.org/grace/ontology/contributor
 :contributor rdf:type owl:Class ;
              rdfs:subClassOf :anything ;
              rdfs:label "contributor"@en .
 
 
-###  https://w3id.org/g17/ontology/correspondance
+###  https://w3id.org/grace/ontology/correspondance
 :correspondance rdf:type owl:Class ;
                 rdfs:subClassOf :textual_source ;
                 rdfs:label "correspondance"@en .
 
 
-###  https://w3id.org/g17/ontology/credit
+###  https://w3id.org/grace/ontology/credit
 :credit rdf:type owl:Class ;
         rdfs:subClassOf :anything ;
         rdfs:label "credit"@en .
 
 
-###  https://w3id.org/g17/ontology/custom_region
+###  https://w3id.org/grace/ontology/custom_region
 :custom_region rdf:type owl:Class ;
                rdfs:subClassOf :place ;
                rdfs:comment "A specific area defined or customized for particular administrative, ecclesiastical, or geographical purposes, often tailored to local needs or historical boundaries." ;
                rdfs:label "custom region"@en .
 
 
-###  https://w3id.org/g17/ontology/custom_subregion
+###  https://w3id.org/grace/ontology/custom_subregion
 :custom_subregion rdf:type owl:Class ;
                   rdfs:subClassOf :place ;
                   rdfs:comment "A smaller, specific division within a custom region, also defined according to particular administrative, geographical, or ecclesiastical requirements." ;
                   rdfs:label "custom sub-region"@en .
 
 
-###  https://w3id.org/g17/ontology/date
+###  https://w3id.org/grace/ontology/date
 :date rdf:type owl:Class ;
       rdfs:subClassOf :anything ;
       rdfs:label "date"@en .
 
 
-###  https://w3id.org/g17/ontology/deaconry
+###  https://w3id.org/grace/ontology/deaconry
 :deaconry rdf:type owl:Class ;
           rdfs:subClassOf :seat_of_worship ;
           rdfs:comment "A church benefice specifically dedicated to a deacon, emphasizing their liturgical and community service roles within the church's structure." ;
           rdfs:label "Deaconry"@en .
 
 
-###  https://w3id.org/g17/ontology/deanery
+###  https://w3id.org/grace/ontology/deanery
 :deanery rdf:type owl:Class ;
          rdfs:subClassOf :institution ;
          rdfs:comment "A deanery is a grouping of neighboring parishes within a diocese, overseen by a dean. It facilitates collaboration among parishes and supports the bishop in administering the diocese." ;
          rdfs:label "deanery"@en .
 
 
-###  https://w3id.org/g17/ontology/death
+###  https://w3id.org/grace/ontology/death
 :death rdf:type owl:Class ;
        rdfs:subClassOf :biographical_event ;
        rdfs:label "death"@en .
 
 
-###  https://w3id.org/g17/ontology/dedication
+###  https://w3id.org/grace/ontology/dedication
 :dedication rdf:type owl:Class ;
             rdfs:subClassOf :anything ;
             rdfs:comment "to be discussed" ;
             rdfs:label "dedication"@en .
 
 
-###  https://w3id.org/g17/ontology/description
+###  https://w3id.org/grace/ontology/description
 :description rdf:type owl:Class ;
              rdfs:subClassOf :anything ;
              rdfs:comment "https://cidoc-crm.org/Entity/e13-attribute-assignment/version-6.2.1" ;
              rdfs:label "description"@en .
 
 
-###  https://w3id.org/g17/ontology/diocese
+###  https://w3id.org/grace/ontology/diocese
 :diocese rdf:type owl:Class ;
          rdfs:subClassOf :institution ;
          rdfs:comment "A diocese that is under the jurisdiction of an archdiocese, with its bishop typically reporting to the metropolitan archbishop." ;
          rdfs:label "diocese"@en .
 
 
-###  https://w3id.org/g17/ontology/dispensation
+###  https://w3id.org/grace/ontology/dispensation
 :dispensation rdf:type owl:Class ;
               rdfs:subClassOf :immaterial_object ,
                               [ rdf:type owl:Restriction ;
@@ -2440,20 +2440,20 @@ xsd:string rdf:type owl:Class ;
               rdfs:label "dispensation"@en .
 
 
-###  https://w3id.org/g17/ontology/ecclesiastical_province
+###  https://w3id.org/grace/ontology/ecclesiastical_province
 :ecclesiastical_province rdf:type owl:Class ;
                          rdfs:subClassOf :institution ;
                          rdfs:comment "A major administrative division within the church, encompassing several dioceses and governed by a metropolitan archbishop, coordinating regional church affairs." ;
                          rdfs:label "ecclesiastical province"@en .
 
 
-###  https://w3id.org/g17/ontology/education
+###  https://w3id.org/grace/ontology/education
 :education rdf:type owl:Class ;
            rdfs:subClassOf :biographical_event ;
            rdfs:label "education"@en .
 
 
-###  https://w3id.org/g17/ontology/entry
+###  https://w3id.org/grace/ontology/entry
 :entry rdf:type owl:Class ;
        rdfs:subClassOf :anything ,
                        [ rdf:type owl:Restriction ;
@@ -2463,7 +2463,7 @@ xsd:string rdf:type owl:Class ;
        rdfs:label "entry"@en .
 
 
-###  https://w3id.org/g17/ontology/event
+###  https://w3id.org/grace/ontology/event
 :event rdf:type owl:Class ;
        rdfs:subClassOf :anything ,
                        [ rdf:type owl:Restriction ;
@@ -2489,27 +2489,27 @@ xsd:string rdf:type owl:Class ;
        rdfs:label "event"@en .
 
 
-###  https://w3id.org/g17/ontology/hermitage
+###  https://w3id.org/grace/ontology/hermitage
 :hermitage rdf:type owl:Class ;
            rdfs:subClassOf :seat_of_worship ;
            rdfs:comment "A religious building. Hermitages are places of contemplation in which clergy or religious laypeople lead a secluded life of prayer in often secluded hermitages and chapels. They are named after hermits, who do not necessarily have to be religious and live in such buildings or in buildings at all. Hermitages can also be huts or small country houses." ;
            rdfs:label "Hermitage"@en .
 
 
-###  https://w3id.org/g17/ontology/hospital
+###  https://w3id.org/grace/ontology/hospital
 :hospital rdf:type owl:Class ;
           rdfs:subClassOf :seat_of_worship ;
           rdfs:comment "A building dedicated to healthcare services under the auspices of the church, often providing care for the sick and needy within a religious framework." ;
           rdfs:label "Hospital"@en .
 
 
-###  https://w3id.org/g17/ontology/identifier
+###  https://w3id.org/grace/ontology/identifier
 :identifier rdf:type owl:Class ;
             rdfs:subClassOf :anything ;
             rdfs:label "identifier"@en .
 
 
-###  https://w3id.org/g17/ontology/immaterial_object
+###  https://w3id.org/grace/ontology/immaterial_object
 :immaterial_object rdf:type owl:Class ;
                    rdfs:subClassOf :object ,
                                    [ rdf:type owl:Restriction ;
@@ -2520,14 +2520,14 @@ xsd:string rdf:type owl:Class ;
                    rdfs:label "immaterial object"@en .
 
 
-###  https://w3id.org/g17/ontology/indeterminate_suffragan_diocese
+###  https://w3id.org/grace/ontology/indeterminate_suffragan_diocese
 :indeterminate_suffragan_diocese rdf:type owl:Class ;
                                  rdfs:subClassOf :diocese ;
                                  rdfs:comment "A type of ecclesiastical institution whose precise hierarchical or geographical affiliations are not clearly defined, often within a larger diocesan structure." ;
                                  rdfs:label "indeterminate suffragan diocese"@en .
 
 
-###  https://w3id.org/g17/ontology/indult
+###  https://w3id.org/grace/ontology/indult
 :indult rdf:type owl:Class ;
         rdfs:subClassOf :immaterial_object ,
                         [ rdf:type owl:Restriction ;
@@ -2538,7 +2538,7 @@ xsd:string rdf:type owl:Class ;
         rdfs:label "indult"@en .
 
 
-###  https://w3id.org/g17/ontology/institution
+###  https://w3id.org/grace/ontology/institution
 :institution rdf:type owl:Class ;
              rdfs:subClassOf :anything ,
                              [ rdf:type owl:Restriction ;
@@ -2552,80 +2552,80 @@ xsd:string rdf:type owl:Class ;
              rdfs:label "institution"@en .
 
 
-###  https://w3id.org/g17/ontology/institution_territory
+###  https://w3id.org/grace/ontology/institution_territory
 :institution_territory rdf:type owl:Class ;
                        rdfs:subClassOf :place ;
                        rdfs:comment "A term for a geographic area within ecclesiastical records that comprises the boundaries of an institution’s jurisdiction." ;
                        rdfs:label "institution territory"@en .
 
 
-###  https://w3id.org/g17/ontology/letter
+###  https://w3id.org/grace/ontology/letter
 :letter rdf:type owl:Class ;
         rdfs:subClassOf :entry ;
         rdfs:label "letter"@en .
 
 
-###  https://w3id.org/g17/ontology/locality
+###  https://w3id.org/grace/ontology/locality
 :locality rdf:type owl:Class ;
           rdfs:subClassOf :place ;
           rdfs:comment "A term for a specific area or neighborhood within a larger geographic or administrative region, often used in ecclesiastical contexts to specify church jurisdictions." ;
           rdfs:label "locality"@en .
 
 
-###  https://w3id.org/g17/ontology/location
+###  https://w3id.org/grace/ontology/location
 :location rdf:type owl:Class ;
           rdfs:subClassOf :place ;
           rdfs:comment "A general term for any geographical area or position where a specific event or institution is situated, used broadly in ecclesiastical and secular contexts." ;
           rdfs:label "location"@en .
 
 
-###  https://w3id.org/g17/ontology/main_property
+###  https://w3id.org/grace/ontology/main_property
 :main_property rdf:type owl:Class ;
                rdfs:subClassOf :term ;
                rdfs:label "main property"@en .
 
 
-###  https://w3id.org/g17/ontology/membership
+###  https://w3id.org/grace/ontology/membership
 :membership rdf:type owl:Class ;
             rdfs:subClassOf :career ;
             rdfs:comment "membership in a religious order or society, e.g." ;
             rdfs:label "membership"@en .
 
 
-###  https://w3id.org/g17/ontology/monastery
+###  https://w3id.org/grace/ontology/monastery
 :monastery rdf:type owl:Class ;
            rdfs:subClassOf :seat_of_worship ;
            rdfs:comment "A religious community where monks or nuns live, work, and worship, following the rules of their religious order, often secluded from the general public to maintain a focus on spiritual life." ;
            rdfs:label "Monastery"@en .
 
 
-###  https://w3id.org/g17/ontology/monetary_value
+###  https://w3id.org/grace/ontology/monetary_value
 :monetary_value rdf:type owl:Class ;
                 rdfs:subClassOf :anything ;
                 rdfs:label "monetary value"@en .
 
 
-###  https://w3id.org/g17/ontology/mystery_of_faith
+###  https://w3id.org/grace/ontology/mystery_of_faith
 :mystery_of_faith rdf:type owl:Class ;
                   rdfs:subClassOf :dedication ;
                   rdfs:comment "A concept or event that is considered a Mystery of Faithy by the Catholic Church" ;
                   rdfs:label "mystery of faith"@en .
 
 
-###  https://w3id.org/g17/ontology/narrative
+###  https://w3id.org/grace/ontology/narrative
 :narrative rdf:type owl:Class ;
            rdfs:subClassOf :entry ;
            rdfs:label "narrative"@en .
 
 
-###  https://w3id.org/g17/ontology/natural_person
+###  https://w3id.org/grace/ontology/natural_person
 :natural_person rdf:type owl:Class ;
                 rdfs:subClassOf :person ;
                 rdfs:comment "A legally recognized individual, as opposed to a corporate entity, involved in legal or church-related matters." ;
                 rdfs:label "natural person"@en .
 
 
-###  https://w3id.org/g17/ontology/object
+###  https://w3id.org/grace/ontology/object
 :object rdf:type owl:Class ;
         rdfs:subClassOf :anything ,
                         [ rdf:type owl:Restriction ;
@@ -2663,14 +2663,14 @@ xsd:string rdf:type owl:Class ;
         rdfs:label "object"@en .
 
 
-###  https://w3id.org/g17/ontology/oratory
+###  https://w3id.org/grace/ontology/oratory
 :oratory rdf:type owl:Class ;
          rdfs:subClassOf :seat_of_worship ;
          rdfs:comment "A designated space for prayer and worship, smaller than a church and often privately funded, used for personal devotion or by specific religious communities without the full status of a parish." ;
          rdfs:label "Oratory"@en .
 
 
-###  https://w3id.org/g17/ontology/papal_grace
+###  https://w3id.org/grace/ontology/papal_grace
 :papal_grace rdf:type owl:Class ;
              rdfs:subClassOf :event ,
                              [ rdf:type owl:Restriction ;
@@ -2684,7 +2684,7 @@ xsd:string rdf:type owl:Class ;
              rdfs:label "papal grace"@en .
 
 
-###  https://w3id.org/g17/ontology/parish
+###  https://w3id.org/grace/ontology/parish
 :parish rdf:type owl:Class ;
         rdfs:subClassOf :institution ;
         rdfs:comment "A parish is a local community of the faithful within a diocese, entrusted to a parish priest for pastoral care, worship, and administration of sacraments." ,
@@ -2693,21 +2693,21 @@ xsd:string rdf:type owl:Class ;
                    "parish"@en .
 
 
-###  https://w3id.org/g17/ontology/parish_church
+###  https://w3id.org/grace/ontology/parish_church
 :parish_church rdf:type owl:Class ;
                rdfs:subClassOf :seat_of_worship ;
                rdfs:comment "A church serving a local community or parish, often responsible for delivering regular religious services, community engagement, and spiritual guidance to its congregants." ;
                rdfs:label "Parish Church"@en .
 
 
-###  https://w3id.org/g17/ontology/parish_hall
+###  https://w3id.org/grace/ontology/parish_hall
 :parish_hall rdf:type owl:Class ;
              rdfs:subClassOf :seat_of_worship ;
              rdfs:comment "A building or space associated with a church used for meetings, social activities, and gatherings of the parish community." ;
              rdfs:label "Parish hall"@en .
 
 
-###  https://w3id.org/g17/ontology/pension
+###  https://w3id.org/grace/ontology/pension
 :pension rdf:type owl:Class ;
          rdfs:subClassOf :immaterial_object ,
                          [ rdf:type owl:Restriction ;
@@ -2718,7 +2718,7 @@ xsd:string rdf:type owl:Class ;
          rdfs:label "pension"@en .
 
 
-###  https://w3id.org/g17/ontology/person
+###  https://w3id.org/grace/ontology/person
 :person rdf:type owl:Class ;
         rdfs:subClassOf :anything ,
                         [ rdf:type owl:Restriction ;
@@ -2732,19 +2732,19 @@ xsd:string rdf:type owl:Class ;
         rdfs:label "person"@en .
 
 
-###  https://w3id.org/g17/ontology/physical_archive
+###  https://w3id.org/grace/ontology/physical_archive
 :physical_archive rdf:type owl:Class ;
                   rdfs:subClassOf :archive ;
                   rdfs:label "physical archive"@en .
 
 
-###  https://w3id.org/g17/ontology/physical_source
+###  https://w3id.org/grace/ontology/physical_source
 :physical_source rdf:type owl:Class ;
                  rdfs:subClassOf :source ;
                  rdfs:label "physical source"@en .
 
 
-###  https://w3id.org/g17/ontology/place
+###  https://w3id.org/grace/ontology/place
 :place rdf:type owl:Class ;
        rdfs:subClassOf :anything ,
                        [ rdf:type owl:Restriction ;
@@ -2758,60 +2758,60 @@ xsd:string rdf:type owl:Class ;
        rdfs:label "place"@en .
 
 
-###  https://w3id.org/g17/ontology/position
+###  https://w3id.org/grace/ontology/position
 :position rdf:type owl:Class ;
           rdfs:subClassOf :career ;
           rdfs:comment "office or occupation held by a person" ;
           rdfs:label "position"@en .
 
 
-###  https://w3id.org/g17/ontology/priory
+###  https://w3id.org/grace/ontology/priory
 :priory rdf:type owl:Class ;
         rdfs:subClassOf :seat_of_worship ;
         rdfs:comment "A religious house governed by a prior or prioress, smaller than an abbey but still dedicated to the monastic life of its community members." ;
         rdfs:label "Priory"@en .
 
 
-###  https://w3id.org/g17/ontology/record
+###  https://w3id.org/grace/ontology/record
 :record rdf:type owl:Class ;
         rdfs:subClassOf :entry ;
         rdfs:label "record"@en .
 
 
-###  https://w3id.org/g17/ontology/region
+###  https://w3id.org/grace/ontology/region
 :region rdf:type owl:Class ;
         rdfs:subClassOf :place ;
         rdfs:comment "A general term for a larger geographic or administrative area, commonly used in both secular and ecclesiastical contexts to organize territories and manage affairs." ;
         rdfs:label "region"@en .
 
 
-###  https://w3id.org/g17/ontology/saint
+###  https://w3id.org/grace/ontology/saint
 :saint rdf:type owl:Class ;
        rdfs:subClassOf :dedication ;
        rdfs:comment "An individual saint of the Catholic Church" ;
        rdfs:label "saint"@en .
 
 
-###  https://w3id.org/g17/ontology/schema
+###  https://w3id.org/grace/ontology/schema
 :schema rdf:type owl:Class ;
         rdfs:subClassOf :anything ;
         rdfs:label "schema"@en .
 
 
-###  https://w3id.org/g17/ontology/seat_of_worship
+###  https://w3id.org/grace/ontology/seat_of_worship
 :seat_of_worship rdf:type owl:Class ;
                  rdfs:subClassOf :institution ;
                  rdfs:comment "auto-generated from erectChurch()" ;
                  rdfs:label "seat of worship"@en .
 
 
-###  https://w3id.org/g17/ontology/serial_source
+###  https://w3id.org/grace/ontology/serial_source
 :serial_source rdf:type owl:Class ;
                rdfs:subClassOf :textual_source ;
                rdfs:label "serial source"@en .
 
 
-###  https://w3id.org/g17/ontology/source
+###  https://w3id.org/grace/ontology/source
 :source rdf:type owl:Class ;
         rdfs:subClassOf :anything ,
                         [ rdf:type owl:Restriction ;
@@ -2821,127 +2821,127 @@ xsd:string rdf:type owl:Class ;
         rdfs:label "source"@en .
 
 
-###  https://w3id.org/g17/ontology/st_peters_basilica
+###  https://w3id.org/grace/ontology/st_peters_basilica
 :st_peters_basilica rdf:type owl:Class ;
                     rdfs:subClassOf :seat_of_worship ;
                     rdfs:comment "The largest and most renowned basilica in the world, located in Vatican City, serving as a major pilgrimage site and the principal church of the Roman Catholic Church." ;
                     rdfs:label "St. Peter's Basilica"@en .
 
 
-###  https://w3id.org/g17/ontology/subregion
+###  https://w3id.org/grace/ontology/subregion
 :subregion rdf:type owl:Class ;
            rdfs:subClassOf :place ;
            rdfs:comment "A specific geographic division within a larger region, used in ecclesiastical and civil administration to organize local governance and church jurisdictions." ;
            rdfs:label "sub-region"@en .
 
 
-###  https://w3id.org/g17/ontology/suffragan_diocese
+###  https://w3id.org/grace/ontology/suffragan_diocese
 :suffragan_diocese rdf:type owl:Class ;
                    rdfs:subClassOf :diocese ;
                    rdfs:comment "A diocese that is under the jurisdiction of an archdiocese, with its bishop typically reporting to the metropolitan archbishop." ;
                    rdfs:label "suffragan diocese"@en .
 
 
-###  https://w3id.org/g17/ontology/supreme_body_of_government
+###  https://w3id.org/grace/ontology/supreme_body_of_government
 :supreme_body_of_government rdf:type owl:Class ;
                             rdfs:subClassOf :institution ;
                             rdfs:comment "The highest administrative or governing body within a certain context, such as a government or ecclesiastical organization, responsible for overarching decision-making and policy." ;
                             rdfs:label "supreme body of government"@en .
 
 
-###  https://w3id.org/g17/ontology/term
+###  https://w3id.org/grace/ontology/term
 :term rdf:type owl:Class ;
       rdfs:subClassOf :type ;
       rdfs:label "term"@en .
 
 
-###  https://w3id.org/g17/ontology/territorial_prelate
+###  https://w3id.org/grace/ontology/territorial_prelate
 :territorial_prelate rdf:type owl:Class ;
                      rdfs:subClassOf :institution ;
                      rdfs:comment "\"nullius\"" ;
                      rdfs:label "territorial prelate"@en .
 
 
-###  https://w3id.org/g17/ontology/textual_source
+###  https://w3id.org/grace/ontology/textual_source
 :textual_source rdf:type owl:Class ;
                 rdfs:subClassOf :physical_source ;
                 rdfs:label "textual source"@en .
 
 
-###  https://w3id.org/g17/ontology/thesaurus
+###  https://w3id.org/grace/ontology/thesaurus
 :thesaurus rdf:type owl:Class ;
            rdfs:subClassOf :type ;
            rdfs:label "thesaurus"@en .
 
 
-###  https://w3id.org/g17/ontology/type
+###  https://w3id.org/grace/ontology/type
 :type rdf:type owl:Class ;
       rdfs:subClassOf :anything ;
       rdfs:label "type"@en .
 
 
-###  https://w3id.org/g17/ontology/type_of_identifier
+###  https://w3id.org/grace/ontology/type_of_identifier
 :type_of_identifier rdf:type owl:Class ;
                     rdfs:subClassOf :type ;
                     rdfs:label "type of identifier"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_locality
+###  https://w3id.org/grace/ontology/unidentified_locality
 :unidentified_locality rdf:type owl:Class ;
                        rdfs:subClassOf :place ;
                        rdfs:comment "A designation for an area whose exact identity or specifics are not clearly defined or recorded, often used in ecclesiastical documents for areas with unclear boundaries." ;
                        rdfs:label "unidentified locality"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_location
+###  https://w3id.org/grace/ontology/unidentified_location
 :unidentified_location rdf:type owl:Class ;
                        rdfs:subClassOf :place ;
                        rdfs:comment "A term used when the specific location of an event, institution, or property cannot be identified or confirmed, often appearing in historical records." ;
                        rdfs:label "unidentified location"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_natural_person
+###  https://w3id.org/grace/ontology/unidentified_natural_person
 :unidentified_natural_person rdf:type owl:Class ;
                              rdfs:subClassOf :person ;
                              rdfs:comment "A term used when the identity of an individual involved in ecclesiastical or legal proceedings cannot be determined or is not specified." ;
                              rdfs:label "unidentified natural person"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_region
+###  https://w3id.org/grace/ontology/unidentified_region
 :unidentified_region rdf:type owl:Class ;
                      rdfs:subClassOf :place ;
                      rdfs:comment "A term for areas within ecclesiastical records that are not clearly identified or whose exact location remains unspecified, often used in historical or archival contexts." ;
                      rdfs:label "unidentified region"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_saint
+###  https://w3id.org/grace/ontology/unidentified_saint
 :unidentified_saint rdf:type owl:Class ;
                     rdfs:subClassOf :dedication ;
                     rdfs:comment "An individual saint of the Catholic Church" ;
                     rdfs:label "unidentified saint"@en .
 
 
-###  https://w3id.org/g17/ontology/unidentified_subregion
+###  https://w3id.org/grace/ontology/unidentified_subregion
 :unidentified_subregion rdf:type owl:Class ;
                         rdfs:subClassOf :place ;
                         rdfs:comment "A term for a geographic area within ecclesiastical records that is not clearly defined or recognized, reflecting incomplete or vague documentation." ;
                         rdfs:label "unidentified sub-region"@en .
 
 
-###  https://w3id.org/g17/ontology/university_degree
+###  https://w3id.org/grace/ontology/university_degree
 :university_degree rdf:type owl:Class ;
                    rdfs:subClassOf :education ;
                    rdfs:label "university degree"@en .
 
 
-###  https://w3id.org/g17/ontology/vicarage
+###  https://w3id.org/grace/ontology/vicarage
 :vicarage rdf:type owl:Class ;
           rdfs:subClassOf :seat_of_worship ;
           rdfs:comment "A church building or establishment where a vicar serves, often provided as part of a benefice that includes living quarters and a stipend." ;
           rdfs:label "Vicarage"@en .
 
 
-###  https://w3id.org/g17/ontology/vicariate
+###  https://w3id.org/grace/ontology/vicariate
 :vicariate rdf:type owl:Class ;
            rdfs:subClassOf :institution ;
            rdfs:comment "A vicariate is an administrative division within a diocese or a mission territory, entrusted to a vicar. It is established to facilitate governance and pastoral care, especially in large or geographically challenging areas." ;
