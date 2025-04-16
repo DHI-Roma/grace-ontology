@@ -26,7 +26,7 @@ jobs:
     - name: Generate Ontospy HTML docs
       run: |
         mkdir -p docs/ontospy
-        ontospy gendocs ontology/graceful17.ttl -o docs/ontospy --type 2 --theme darkly --title "Graceful17 Ontology"
+        ontospy gendocs ontology/grace.ttl -o docs/ontospy --type 2 --theme darkly --title "GRACE Ontology"
 
     - name: Commit and push documentation
       run: |
