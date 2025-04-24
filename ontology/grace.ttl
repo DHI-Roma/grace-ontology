@@ -1,77 +1,32 @@
-@prefix credit: <https://credit.niso.org/contributor-roles/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix g17raw: <https://g17.dhi-roma.it/raw/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix grace: <https://w3id.org/grace/ontology/> .
-@prefix ns1: <http://purl.org/vocommons/voaf#> .
-@prefix ns2: <http://purl.org/ontology/bibo/> .
+@prefix ns1: <http://purl.org/ontology/bibo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-rdf:Property a rdfs:Class ;
-    rdfs:label "Property"@en .
-
-rdfs:Class a rdfs:Class ;
-    rdfs:label "Class"@en .
-
-rdfs:Datatype a rdfs:Class ;
-    rdfs:label "Datatype"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-rdfs:Literal a rdfs:Class ;
-    rdfs:label "Literal"@en .
-
-<http://www.opengis.net/ont/geosparql#http://www.opengis.net/ont/geosparql#> rdfs:label "OpenGIS"@en .
-
-rdfs:label a rdf:Property ;
-    rdfs:label "label"@en .
-
-xsd:boolean a rdfs:Datatype ;
-    rdfs:label "boolean"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-xsd:dateTime a rdfs:Datatype ;
-    rdfs:label "dateTime"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-xsd:language a rdfs:Datatype ;
-    rdfs:label "language"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-credit:conceptualization a owl:ObjectProperty ;
-    rdfs:label "conceptualization"@en ;
-    rdfs:comment "Ideas; formulation or evolution of overarching research goals and aims." .
-
-credit:data-curation a owl:ObjectProperty ;
-    rdfs:label "data curation"@en ;
-    rdfs:comment "Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later reuse." .
-
-credit:methodology a owl:ObjectProperty ;
-    rdfs:label "methodology"@en ;
-    rdfs:comment "Development or design of methodology; creation of models." .
-
 grace: a owl:Ontology ;
-    rdfs:label "Example" ;
+    rdfs:label "Graceful17 Ontology"@en ;
     dc:title "Graceful17 Ontology"@en ;
-    dcterms:created "2025-04-03T16:26:28"@en ;
+    dcterms:created "2025-04-24T11:09:53"@en ;
     dcterms:creator "Bruno Boute"@en,
         "Christoph Sander"@en ;
     dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-    ns2:status <http://purl.org/ontology/bibo/status/draft> ;
+    ns1:status <http://purl.org/ontology/bibo/status/draft> ;
     vann:preferredNamespacePrefix "grace"@en ;
     vann:preferredNamespaceUri "https://w3id.org/grace/ontology/" ;
-    ns1:extends <https://w3id.org/otherOntology> ;
-    schema1:citation "Cite this vocabulary as: ...."@en ;
     owl:backwardCompatibleWith grace:1.0.0 ;
     owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
     owl:priorVersion grace:1.0.0 ;
-    owl:versionIRI grace:1.0.1 .
+    owl:versionIRI grace:1.0.1 ;
+    prov:generatedAtTime "2025-04-24T11:09:53"^^xsd:dateTime ;
+    schema:citation "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
 
 grace:abbey a owl:Class ;
     rdfs:label "Abbey"@en ;
@@ -134,23 +89,29 @@ grace:apostolic_provision a owl:Class ;
     rdfs:label "apostolic provision"@en ;
     rdfs:comment "A formal ecclesiastical decree issued by the Pope, governing the provision of ecclesiastical offices and benefits, often in response to specific events or needs within the Church." ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:provision_subform ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:deceased_in_rome ],
+        [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:has_main_type ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:deceased_in_rome ],
+            owl:onProperty grace:source_subregister ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:during_sede_vancate ],
         [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:vacancy_date ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:provision_type ],
-        [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:provision_subform ],
+            owl:onProperty grace:event_circumstances ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:source_subregister ],
+            owl:onProperty grace:provision_type ],
         grace:papal_grace .
 
 grace:apostolic_supplication a owl:Class ;
@@ -191,10 +152,16 @@ grace:benefice a owl:Class ;
     rdfs:comment "A right or title granted to an ecclesiastical position, allowing the holder to receive income or benefits in exchange for performing religious duties." ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:disambiguation_of_a_location_of_an_institution ],
+        [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:church_category ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:in_diocese ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:has_main_type ],
         [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:religious_order ],
@@ -203,13 +170,7 @@ grace:benefice a owl:Class ;
             owl:onProperty grace:benefice_category ],
         [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:disambiguation_of_a_location_of_an_institution ],
-        [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:in_vicariate ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
         grace:immaterial_object .
 
 grace:benefice_taxation a owl:ObjectProperty ;
@@ -330,8 +291,7 @@ grace:competitor a owl:ObjectProperty ;
 
 grace:confidence a owl:ObjectProperty ;
     rdfs:label "confidence"@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( grace:description g17raw:information_object ) ] ;
+    rdfs:domain grace:description ;
     rdfs:range grace:type .
 
 grace:context_explanation a owl:DatatypeProperty ;
@@ -360,6 +320,10 @@ grace:cool_id a owl:DatatypeProperty ;
 grace:correspondance a owl:Class ;
     rdfs:label "correspondance"@en ;
     rdfs:subClassOf grace:textual_source .
+
+grace:credit a owl:Class ;
+    rdfs:label "credit"@en ;
+    rdfs:subClassOf grace:anything .
 
 grace:currency a owl:ObjectProperty ;
     rdfs:label "currency"@en ;
@@ -1116,119 +1080,6 @@ grace:wkt a owl:DatatypeProperty ;
     rdfs:range geosparql:wktLiteral ;
     rdfs:subPropertyOf grace:place_literal .
 
-g17raw:belongs_to_entry a owl:ObjectProperty ;
-    rdfs:label "belongs to entry"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range grace:entry ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:bow_objects a owl:DatatypeProperty ;
-    rdfs:label "bow objects"@en ;
-    rdfs:comment "Bag of Words of types from related objects" ;
-    rdfs:domain g17raw:analysis ;
-    rdfs:range xsd:string ;
-    rdfs:subPropertyOf g17raw:insights .
-
-g17raw:collection_name a owl:DatatypeProperty ;
-    rdfs:label "collection name"@en ;
-    rdfs:domain g17raw:collection ;
-    rdfs:range xsd:string .
-
-g17raw:credited a owl:ObjectProperty ;
-    rdfs:label "credited"@en ;
-    rdfs:domain grace:anything ;
-    rdfs:range grace:credit .
-
-g17raw:entity a owl:ObjectProperty ;
-    rdfs:label "entity"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range grace:anything .
-
-g17raw:has_class a owl:ObjectProperty ;
-    rdfs:label "has class"@en ;
-    rdfs:domain g17raw:label ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:has_elements a owl:ObjectProperty ;
-    rdfs:label "has elements"@en ;
-    rdfs:domain grace:entry ;
-    rdfs:range g17raw:element ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:has_label a owl:ObjectProperty ;
-    rdfs:label "has label"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range g17raw:label ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:has_main_property a owl:ObjectProperty ;
-    rdfs:label "has main property"@en ;
-    rdfs:domain g17raw:label ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( grace:type xsd:string ) ] .
-
-g17raw:in_collection a owl:ObjectProperty ;
-    rdfs:label "in collection"@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( grace:entry grace:source ) ] ;
-    rdfs:range g17raw:collection ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:is_described_by a owl:ObjectProperty ;
-    rdfs:label "is described by"@en ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( grace:event grace:object ) ] ;
-    rdfs:range g17raw:element ;
-    rdfs:subPropertyOf grace:refers_to ;
-    owl:inverseOf g17raw:describes .
-
-g17raw:label_name a owl:DatatypeProperty ;
-    rdfs:label "label name"@en ;
-    rdfs:domain g17raw:label ;
-    rdfs:range xsd:string .
-
-g17raw:ninox_record a owl:ObjectProperty ;
-    rdfs:label "Ninox Record"@en ;
-    rdfs:domain grace:anything ;
-    rdfs:range xsd:anyURI ;
-    rdfs:subPropertyOf grace:lod .
-
-g17raw:span_end a owl:DatatypeProperty ;
-    rdfs:label "span end"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range xsd:integer .
-
-g17raw:span_start a owl:DatatypeProperty ;
-    rdfs:label "span start"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range xsd:integer .
-
-g17raw:span_text a owl:DatatypeProperty ;
-    rdfs:label "span text"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range xsd:string .
-
-g17raw:transcription a owl:DatatypeProperty ;
-    rdfs:label "transcription"@en ;
-    rdfs:domain grace:entry ;
-    rdfs:range xsd:string ;
-    rdfs:subPropertyOf grace:entry_literal .
-
-geosparql:geoJSONLiteral a rdfs:Datatype ;
-    rdfs:label "geoJSONLiteral"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-geosparql:wktLiteral a rdfs:Datatype ;
-    rdfs:label "wktLiteral"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-xsd:positiveInteger a rdfs:Datatype ;
-    rdfs:label "positiveInteger"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-prov:person a owl:Class ;
-    rdfs:label "person"@en .
-
 grace:archive_object a owl:ObjectProperty ;
     rdfs:label "archive object"@en ;
     rdfs:domain [ a owl:Class ;
@@ -1269,13 +1120,8 @@ grace:contributor a owl:Class ;
 
 grace:contributor_literal a owl:DatatypeProperty ;
     rdfs:label "contributor literal"@en ;
-    rdfs:domain prov:person ;
     rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf grace:appellation_literal .
-
-grace:credit a owl:Class ;
-    rdfs:label "credit"@en ;
-    rdfs:subClassOf grace:anything .
 
 grace:date_object a owl:DatatypeProperty ;
     rdfs:label "date object"@en ;
@@ -1289,7 +1135,7 @@ grace:deceased_in_rome a owl:ObjectProperty ;
     rdfs:comment "Designation for someone who has died in Rome, often used in ecclesiastical records to denote the significant passing of church figures in the Vatican's vicinity." ;
     rdfs:domain grace:event ;
     rdfs:range grace:type ;
-    rdfs:subPropertyOf grace:type_assigned .
+    rdfs:subPropertyOf grace:event_circumstances .
 
 grace:dedication_literal a owl:DatatypeProperty ;
     rdfs:label "dedication literal"@en ;
@@ -1303,6 +1149,13 @@ grace:disambiguation_of_a_location_of_an_institution a owl:ObjectProperty ;
     rdfs:domain grace:object ;
     rdfs:range grace:place ;
     rdfs:subPropertyOf grace:related_to_place .
+
+grace:during_sede_vancate a owl:ObjectProperty ;
+    rdfs:label "during sede vancate"@en ;
+    rdfs:comment "Vacancy occurred during which a diocese or archdiocese is without a prelate installed in office, with the prelate's office being the cathedral." ;
+    rdfs:domain grace:event ;
+    rdfs:range grace:type ;
+    rdfs:subPropertyOf grace:event_circumstances .
 
 grace:education a owl:Class ;
     rdfs:label "education"@en ;
@@ -1341,6 +1194,20 @@ grace:governs a owl:TransitiveProperty ;
     rdfs:range grace:institution ;
     rdfs:subPropertyOf grace:institution_object ;
     owl:inverseOf grace:under_jurisdiction .
+
+grace:has_father a owl:ObjectProperty ;
+    rdfs:label "has father"@en ;
+    rdfs:comment "A term used to describe the fatherhood relationship with regard to a subject of a biographical event." ;
+    rdfs:domain grace:biographical_event ;
+    rdfs:range grace:person ;
+    rdfs:subPropertyOf grace:has_participant .
+
+grace:has_mother a owl:ObjectProperty ;
+    rdfs:label "has mother"@en ;
+    rdfs:comment "A term used to describe the motherhood relationship with regard to a subject of a biographical event." ;
+    rdfs:domain grace:biographical_event ;
+    rdfs:range grace:person ;
+    rdfs:subPropertyOf grace:has_participant .
 
 grace:identifier_object a owl:ObjectProperty ;
     rdfs:label "identifier object"@en ;
@@ -1569,25 +1436,6 @@ grace:vacancy_date a owl:ObjectProperty ;
     rdfs:range grace:date ;
     rdfs:subPropertyOf grace:has_time_span .
 
-g17raw:describes a owl:ObjectProperty ;
-    rdfs:label "describes"@en ;
-    rdfs:domain g17raw:element ;
-    rdfs:range [ a owl:Class ;
-            owl:unionOf ( grace:event grace:object ) ] ;
-    rdfs:subPropertyOf grace:refers_to .
-
-g17raw:information_object a owl:Class ;
-    rdfs:label "Information Object"@en ;
-    rdfs:subClassOf g17raw:raw_data .
-
-g17raw:insights a owl:ObjectProperty ;
-    rdfs:label "insights"@en ;
-    rdfs:comment "properties from pre-calculated analytics" ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( grace:event grace:object grace:anything ) ] ;
-    rdfs:range g17raw:analysis ;
-    rdfs:subPropertyOf grace:refers_to .
-
 grace:archive_literal a owl:DatatypeProperty ;
     rdfs:label "archive literal"@en ;
     rdfs:domain grace:archive ;
@@ -1609,11 +1457,22 @@ grace:dedication_object a owl:ObjectProperty ;
     rdfs:range grace:dedication ;
     rdfs:subPropertyOf grace:refers_to .
 
+grace:entry_literal a owl:DatatypeProperty ;
+    rdfs:label "entry literal"@en ;
+    rdfs:domain grace:entry ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf grace:appellation_literal .
+
 grace:has_monetary_value a owl:ObjectProperty ;
     rdfs:label "has monetary value"@en ;
     rdfs:domain grace:event ;
     rdfs:range grace:monetary_value ;
     rdfs:subPropertyOf grace:money_object .
+
+grace:lod a owl:ObjectProperty ;
+    rdfs:label "LOD"@en ;
+    rdfs:domain grace:anything ;
+    rdfs:range xsd:anyURI .
 
 grace:money_literal a owl:DatatypeProperty ;
     rdfs:label "money literal"@en ;
@@ -1661,15 +1520,6 @@ grace:thesaurus a owl:Class ;
     rdfs:label "thesaurus"@en ;
     rdfs:subClassOf grace:type .
 
-g17raw:analysis a owl:Class ;
-    rdfs:label "analysis"@en ;
-    rdfs:comment "a container of analytical insights in RDF" ;
-    rdfs:subClassOf g17raw:raw_data .
-
-g17raw:collection a owl:Class ;
-    rdfs:label "collection"@en ;
-    rdfs:subClassOf g17raw:raw_data .
-
 grace:biography_subject a owl:ObjectProperty ;
     rdfs:label "biography subject"@en ;
     rdfs:comment "A term used to describe the subject of a biographical event." ;
@@ -1686,11 +1536,12 @@ grace:diocese a owl:Class ;
     rdfs:comment "A diocese that is under the jurisdiction of an archdiocese, with its bishop typically reporting to the metropolitan archbishop." ;
     rdfs:subClassOf grace:institution .
 
-grace:entry_literal a owl:DatatypeProperty ;
-    rdfs:label "entry literal"@en ;
-    rdfs:domain grace:entry ;
-    rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf grace:appellation_literal .
+grace:event_circumstances a owl:ObjectProperty ;
+    rdfs:label "event circumstances"@en ;
+    rdfs:comment "circumstances of an event a categorical data" ;
+    rdfs:domain grace:event ;
+    rdfs:range grace:type ;
+    rdfs:subPropertyOf grace:type_assigned .
 
 grace:has_time_span a owl:ObjectProperty ;
     rdfs:label "has time span"@en ;
@@ -1699,23 +1550,6 @@ grace:has_time_span a owl:ObjectProperty ;
             owl:unionOf ( grace:event grace:object ) ] ;
     rdfs:range grace:date ;
     rdfs:subPropertyOf grace:date_object .
-
-grace:lod a owl:ObjectProperty ;
-    rdfs:label "LOD"@en ;
-    rdfs:domain grace:anything ;
-    rdfs:range xsd:anyURI .
-
-xsd:anyURI a rdfs:Datatype ;
-    rdfs:label "anyURI"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-xsd:decimal a rdfs:Datatype ;
-    rdfs:label "decimal"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
-xsd:integer a rdfs:Datatype ;
-    rdfs:label "integer"@en ;
-    rdfs:subClassOf rdfs:Literal .
 
 grace:event_object a owl:ObjectProperty ;
     rdfs:label "event object"@en ;
@@ -1749,14 +1583,6 @@ grace:place_literal a owl:DatatypeProperty ;
     rdfs:domain grace:place ;
     rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf grace:appellation_literal .
-
-g17raw:label a owl:Class ;
-    rdfs:label "label"@en ;
-    rdfs:subClassOf g17raw:raw_data .
-
-xsd:date a rdfs:Datatype ;
-    rdfs:label "date"@en ;
-    rdfs:subClassOf rdfs:Literal .
 
 grace:institution_object a owl:ObjectProperty ;
     rdfs:label "institution object"@en ;
@@ -1792,9 +1618,6 @@ grace:type_literal a owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
     rdfs:subPropertyOf grace:appellation_literal .
 
-g17raw:raw_data a owl:Class ;
-    rdfs:label "Raw Data"@en .
-
 grace:date_literal a owl:DatatypeProperty ;
     rdfs:label "date literal"@en ;
     rdfs:domain grace:date ;
@@ -1828,13 +1651,6 @@ grace:place_object a owl:ObjectProperty ;
     rdfs:range grace:place ;
     rdfs:subPropertyOf grace:refers_to .
 
-grace:biographical_event a owl:Class ;
-    rdfs:label "biographical event"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:biography_subject ],
-        grace:event .
-
 grace:type_object a owl:ObjectProperty ;
     rdfs:label "type object"@en ;
     rdfs:domain [ a owl:Class ;
@@ -1842,15 +1658,25 @@ grace:type_object a owl:ObjectProperty ;
     rdfs:range grace:type ;
     rdfs:subPropertyOf grace:refers_to .
 
-g17raw:element a owl:Class ;
-    rdfs:label "element"@en ;
-    rdfs:subClassOf g17raw:raw_data .
+grace:biographical_event a owl:Class ;
+    rdfs:label "biographical event"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:has_father ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:has_mother ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:biography_subject ],
+        grace:event .
 
-grace:has_participant a owl:ObjectProperty ;
-    rdfs:label "has participant"@en ;
-    rdfs:domain grace:event ;
-    rdfs:range grace:person ;
-    rdfs:subPropertyOf grace:person_object .
+grace:source a owl:Class ;
+    rdfs:label "source"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:type_of_source ],
+        grace:anything .
 
 grace:type_assigned a owl:ObjectProperty ;
     rdfs:label "type assigned"@en ;
@@ -1863,22 +1689,21 @@ grace:archive a owl:Class ;
     rdfs:label "archive"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
+            owl:onProperty grace:type_of_archive ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_archive ],
+            owl:onProperty grace:has_main_type ],
         grace:anything .
+
+grace:has_participant a owl:ObjectProperty ;
+    rdfs:label "has participant"@en ;
+    rdfs:domain grace:event ;
+    rdfs:range grace:person ;
+    rdfs:subPropertyOf grace:person_object .
 
 grace:monetary_value a owl:Class ;
     rdfs:label "monetary value"@en ;
     rdfs:subClassOf grace:anything .
-
-grace:source a owl:Class ;
-    rdfs:label "source"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_source ],
-        grace:anything .
 
 grace:appellation_literal a owl:DatatypeProperty ;
     rdfs:label "appellation literal"@en ;
@@ -1894,11 +1719,6 @@ grace:seat_of_worship a owl:Class ;
     rdfs:comment "auto-generated from erectChurch()" ;
     rdfs:subClassOf grace:institution .
 
-grace:dedication a owl:Class ;
-    rdfs:label "dedication"@en ;
-    rdfs:comment "to be discussed" ;
-    rdfs:subClassOf grace:anything .
-
 grace:entry a owl:Class ;
     rdfs:label "entry"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -1912,6 +1732,11 @@ grace:refers_to a owl:ObjectProperty ;
     rdfs:domain grace:anything ;
     rdfs:range grace:anything .
 
+grace:dedication a owl:Class ;
+    rdfs:label "dedication"@en ;
+    rdfs:comment "to be discussed" ;
+    rdfs:subClassOf grace:anything .
+
 grace:has_main_type a owl:ObjectProperty ;
     rdfs:label "has main type"@en ;
     rdfs:domain [ a owl:Class ;
@@ -1919,38 +1744,34 @@ grace:has_main_type a owl:ObjectProperty ;
     rdfs:range grace:type ;
     rdfs:subPropertyOf grace:type_object .
 
-xsd:string a rdfs:Datatype ;
-    rdfs:label "string"@en ;
-    rdfs:subClassOf rdfs:Literal .
-
 grace:person a owl:Class ;
     rdfs:label "person"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
+            owl:onProperty grace:type_of_person ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_person ],
+            owl:onProperty grace:has_main_type ],
         grace:anything .
 
 grace:place a owl:Class ;
     rdfs:label "place"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
+            owl:onProperty grace:type_of_place ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_place ],
+            owl:onProperty grace:has_main_type ],
         grace:anything .
 
 grace:institution a owl:Class ;
     rdfs:label "institution"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_institution ],
+            owl:onProperty grace:has_main_type ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
+            owl:onProperty grace:type_of_institution ],
         grace:anything .
 
 grace:anything a owl:Class ;
@@ -1961,28 +1782,28 @@ grace:object a owl:Class ;
     rdfs:label "object"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:regular_benefice ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:type_of_object ],
-        [ a owl:Restriction ;
-            owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:care_of_souls ],
+            owl:onProperty grace:in_deanery ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:has_main_type ],
         [ a owl:Restriction ;
-            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:place_information_within_church_name ],
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:care_of_souls ],
         [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:in_deanery ],
+            owl:onProperty grace:place_information_within_church_name ],
         [ a owl:Restriction ;
             owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:residence ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:patronage_type ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:type_of_object ],
+        [ a owl:Restriction ;
+            owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty grace:regular_benefice ],
         grace:anything .
 
 grace:type a owl:Class ;
@@ -1993,18 +1814,17 @@ grace:event a owl:Class ;
     rdfs:label "event"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:has_main_type ],
+            owl:onProperty grace:event_date ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:place_of_event ],
+            owl:onProperty grace:expedition_date ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
             owl:onProperty grace:type_of_event ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:event_date ],
+            owl:onProperty grace:place_of_event ],
         [ a owl:Restriction ;
             owl:cardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty grace:expedition_date ],
+            owl:onProperty grace:has_main_type ],
         grace:anything .
-
