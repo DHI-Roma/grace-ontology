@@ -1,16 +1,32 @@
-# This CITATION.cff file was generated with Zotero.
+# This CITATION.cff file was generated with cffinit.
 
 cff-version: 1.2.0
+title: GRACE Ontology
 message: >-
-  If you use this dataset, please cite it using the metadata from this file.
-title:  >-
-  GRACE Ontology
-abstract: The official GRACE ontology
+  If you use this dataset, please cite it using the metadata
+  from this file.
 type: dataset
-url: https://github.com/DHI-Roma/grace-ontology
-authors: 
+authors:
   - family-names: Sander
     given-names: Christoph
+    email: c.sander@dhi-roma.it
+    affiliation: Deutsches Historisches Institut in Rom
+    orcid: 'https://orcid.org/0000-0003-4452-0107'
   - family-names: Boute
     given-names: Bruno
-date-released: 2025-04-16
+    email: Boute@em.uni-frankfurt.de
+    affiliation: Goethe Universität Frankfurt
+    orcid: 'https://orcid.org/0000-0003-0911-3995'
+identifiers:
+  - type: url
+    value: 'https://w3id.org/grace/ontology'
+    description: namespace
+repository-code: 'https://github.com/DHI-Roma/grace-ontology'
+url: 'https://w3id.org/grace/ontology'
+abstract: The official GRACE ontology
+keywords:
+  - ontology
+  - RDF
+  - OWL
+license: MIT
+date-released: '2025-04-16'
