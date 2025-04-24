@@ -28,10 +28,15 @@ jobs:
         mkdir -p docs/ontospy
         ontospy gendocs ontology/grace.ttl -o docs/ontospy --type 2 --theme darkly --title "GRACE Ontology"
 
-    - name: Commit and push documentation
+    - name: Commit changes
       run: |
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
         git add docs/ontospy
         git commit -m "Update Ontospy documentation" || echo "No changes to commit"
-        git push
+
+    - name: Pull remote changes (rebase)
+      run: git pull --rebase origin main
+
+    - name: Push changes
+      run: git push origin main
