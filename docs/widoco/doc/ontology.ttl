@@ -10,18 +10,18 @@
                                     owl:versionIRI <https://w3id.org/grace/ontology/1.0.1> ;
                                     owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
                                     <http://purl.org/dc/elements/1.1/title> "Graceful17 Ontology"@en ;
-                                    <http://purl.org/dc/terms/created> "2025-04-03T16:26:28"@en ;
+                                    <http://purl.org/dc/terms/created> "2025-04-24T11:09:53"@en ;
                                     <http://purl.org/dc/terms/creator> "Bruno Boute"@en ,
                                                                        "Christoph Sander"@en ;
                                     <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
                                     <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "grace"@en ;
                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/grace/ontology/" ;
-                                    <http://purl.org/vocommons/voaf#extends> <https://w3id.org/otherOntology> ;
-                                    <http://schema.org/citation> "Cite this vocabulary as: ...."@en ;
-                                    rdfs:label "Example" ;
+                                    rdfs:label "Graceful17 Ontology"@en ;
                                     owl:backwardCompatibleWith <https://w3id.org/grace/ontology/1.0.0> ;
-                                    owl:priorVersion <https://w3id.org/grace/ontology/1.0.0> .
+                                    owl:priorVersion <https://w3id.org/grace/ontology/1.0.0> ;
+                                    <http://www.w3.org/ns/prov#generatedAtTime> "2025-04-24T11:09:53"^^xsd:dateTime ;
+                                    <https://schema.org/citation> "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
 
 #################################################################
 #    Annotation properties
@@ -51,196 +51,25 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://purl.org/vocommons/voaf#extends
-<http://purl.org/vocommons/voaf#extends> rdf:type owl:AnnotationProperty .
+###  http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> rdf:type owl:AnnotationProperty .
 
 
-###  http://schema.org/citation
-<http://schema.org/citation> rdf:type owl:AnnotationProperty .
+###  https://schema.org/citation
+<https://schema.org/citation> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Datatypes
 #################################################################
 
-###  http://www.opengis.net/ont/geosparql#geoJSONLiteral
-<http://www.opengis.net/ont/geosparql#geoJSONLiteral> rdf:type rdfs:Datatype .
-
-
-###  http://www.opengis.net/ont/geosparql#wktLiteral
-<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#anyURI
-xsd:anyURI rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#boolean
-xsd:boolean rdf:type rdfs:Datatype .
-
-
 ###  http://www.w3.org/2001/XMLSchema#date
 xsd:date rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#dateTime
-xsd:dateTime rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#decimal
-xsd:decimal rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#integer
-xsd:integer rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#language
-xsd:language rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#positiveInteger
-xsd:positiveInteger rdf:type rdfs:Datatype .
-
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string rdf:type rdfs:Datatype .
 
 
 #################################################################
 #    Object Properties
 #################################################################
-
-###  https://credit.niso.org/contributor-roles/conceptualization
-<https://credit.niso.org/contributor-roles/conceptualization> rdf:type owl:ObjectProperty ;
-                                                              rdfs:comment "Ideas; formulation or evolution of overarching research goals and aims." ;
-                                                              rdfs:label "conceptualization"@en .
-
-
-###  https://credit.niso.org/contributor-roles/data-curation
-<https://credit.niso.org/contributor-roles/data-curation> rdf:type owl:ObjectProperty ;
-                                                          rdfs:comment "Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later reuse." ;
-                                                          rdfs:label "data curation"@en .
-
-
-###  https://credit.niso.org/contributor-roles/methodology
-<https://credit.niso.org/contributor-roles/methodology> rdf:type owl:ObjectProperty ;
-                                                        rdfs:comment "Development or design of methodology; creation of models." ;
-                                                        rdfs:label "methodology"@en .
-
-
-###  https://g17.dhi-roma.it/raw/belongs_to_entry
-<https://g17.dhi-roma.it/raw/belongs_to_entry> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf :refers_to ;
-                                               rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                               rdfs:range :entry ;
-                                               rdfs:label "belongs to entry"@en .
-
-
-###  https://g17.dhi-roma.it/raw/credited
-<https://g17.dhi-roma.it/raw/credited> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain :anything ;
-                                       rdfs:range :credit ;
-                                       rdfs:label "credited"@en .
-
-
-###  https://g17.dhi-roma.it/raw/describes
-<https://g17.dhi-roma.it/raw/describes> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :refers_to ;
-                                        rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                        rdfs:range [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :event
-                                                                   :object
-                                                                 )
-                                                   ] ;
-                                        rdfs:label "describes"@en .
-
-
-###  https://g17.dhi-roma.it/raw/entity
-<https://g17.dhi-roma.it/raw/entity> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                     rdfs:range :anything ;
-                                     rdfs:label "entity"@en .
-
-
-###  https://g17.dhi-roma.it/raw/has_class
-<https://g17.dhi-roma.it/raw/has_class> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :refers_to ;
-                                        rdfs:domain <https://g17.dhi-roma.it/raw/label> ;
-                                        rdfs:label "has class"@en .
-
-
-###  https://g17.dhi-roma.it/raw/has_elements
-<https://g17.dhi-roma.it/raw/has_elements> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf :refers_to ;
-                                           rdfs:domain :entry ;
-                                           rdfs:range <https://g17.dhi-roma.it/raw/element> ;
-                                           rdfs:label "has elements"@en .
-
-
-###  https://g17.dhi-roma.it/raw/has_label
-<https://g17.dhi-roma.it/raw/has_label> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf :refers_to ;
-                                        rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                        rdfs:range <https://g17.dhi-roma.it/raw/label> ;
-                                        rdfs:label "has label"@en .
-
-
-###  https://g17.dhi-roma.it/raw/has_main_property
-<https://g17.dhi-roma.it/raw/has_main_property> rdf:type owl:ObjectProperty ;
-                                                rdfs:domain <https://g17.dhi-roma.it/raw/label> ;
-                                                rdfs:range [ rdf:type owl:Class ;
-                                                             owl:unionOf ( xsd:string
-                                                                           :type
-                                                                         )
-                                                           ] ;
-                                                rdfs:label "has main property"@en .
-
-
-###  https://g17.dhi-roma.it/raw/in_collection
-<https://g17.dhi-roma.it/raw/in_collection> rdf:type owl:ObjectProperty ;
-                                            rdfs:subPropertyOf :refers_to ;
-                                            rdfs:domain [ rdf:type owl:Class ;
-                                                          owl:unionOf ( :entry
-                                                                        :source
-                                                                      )
-                                                        ] ;
-                                            rdfs:range <https://g17.dhi-roma.it/raw/collection> ;
-                                            rdfs:label "in collection"@en .
-
-
-###  https://g17.dhi-roma.it/raw/insights
-<https://g17.dhi-roma.it/raw/insights> rdf:type owl:ObjectProperty ;
-                                       rdfs:subPropertyOf :refers_to ;
-                                       rdfs:domain [ rdf:type owl:Class ;
-                                                     owl:unionOf ( :anything
-                                                                   :event
-                                                                   :object
-                                                                 )
-                                                   ] ;
-                                       rdfs:range <https://g17.dhi-roma.it/raw/analysis> .
-
-
-###  https://g17.dhi-roma.it/raw/is_described_by
-<https://g17.dhi-roma.it/raw/is_described_by> rdf:type owl:ObjectProperty ;
-                                              rdfs:subPropertyOf :refers_to ;
-                                              owl:inverseOf <https://g17.dhi-roma.it/raw/describes> ;
-                                              rdfs:domain [ rdf:type owl:Class ;
-                                                            owl:unionOf ( :event
-                                                                          :object
-                                                                        )
-                                                          ] ;
-                                              rdfs:range <https://g17.dhi-roma.it/raw/element> ;
-                                              rdfs:label "is described by"@en .
-
-
-###  https://g17.dhi-roma.it/raw/ninox_record
-<https://g17.dhi-roma.it/raw/ninox_record> rdf:type owl:ObjectProperty ;
-                                           rdfs:subPropertyOf :lod ;
-                                           rdfs:domain :anything ;
-                                           rdfs:range xsd:anyURI ;
-                                           rdfs:label "Ninox Record"@en .
-
 
 ###  https://w3id.org/grace/ontology/affiliated_to_institution
 :affiliated_to_institution rdf:type owl:ObjectProperty ;
@@ -402,11 +231,7 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/grace/ontology/confidence
 :confidence rdf:type owl:ObjectProperty ;
-            rdfs:domain [ rdf:type owl:Class ;
-                          owl:unionOf ( <https://g17.dhi-roma.it/raw/information_object>
-                                        :description
-                                      )
-                        ] ;
+            rdfs:domain :description ;
             rdfs:range :type ;
             rdfs:label "confidence"@en .
 
@@ -449,7 +274,7 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/grace/ontology/deceased_in_rome
 :deceased_in_rome rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf :type_assigned ;
+                  rdfs:subPropertyOf :event_circumstances ;
                   rdfs:domain :event ;
                   rdfs:range :type ;
                   rdfs:comment "Designation for someone who has died in Rome, often used in ecclesiastical records to denote the significant passing of church figures in the Vatican's vicinity." ;
@@ -528,13 +353,19 @@ xsd:string rdf:type rdfs:Datatype .
                                                 rdfs:label "disambiguation of a location of an institution"@en .
 
 
+###  https://w3id.org/grace/ontology/during_sede_vancate
+:during_sede_vancate rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :event_circumstances ;
+                     rdfs:domain :event ;
+                     rdfs:range :type ;
+                     rdfs:comment "Vacancy occurred during which a diocese or archdiocese is without a prelate installed in office, with the prelate's office being the cathedral." ;
+                     rdfs:label "during sede vancate"@en .
+
+
 ###  https://w3id.org/grace/ontology/earthworks
 :earthworks rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :lod ;
-            rdfs:domain :anything ;
-            rdfs:range xsd:anyURI ;
-            rdfs:comment "Polygons of the boundaries of ca. 750 dioceses across Latin Christendom as they appeared between 1200-1500. Rather than corresponding to any particular year, the map is an amalgam that displays all Latin dioceses that existed at some point during this period. The map excludes dioceses in the Latin East and in parts of eastern Europe whose boundaries are unknown (or were never established)." ;
-            rdfs:label "EarthWorks"@en .
+            rdfs:domain :anything .
 
 
 ###  https://w3id.org/grace/ontology/entry_object
@@ -548,6 +379,15 @@ xsd:string rdf:type rdfs:Datatype .
                           ] ;
               rdfs:range :entry ;
               rdfs:label "entry object"@en .
+
+
+###  https://w3id.org/grace/ontology/event_circumstances
+:event_circumstances rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :type_assigned ;
+                     rdfs:domain :event ;
+                     rdfs:range :type ;
+                     rdfs:comment "circumstances of an event a categorical data" ;
+                     rdfs:label "event circumstances"@en .
 
 
 ###  https://w3id.org/grace/ontology/event_date
@@ -661,6 +501,17 @@ xsd:string rdf:type rdfs:Datatype .
                   rdfs:label "former possessor"@en .
 
 
+###  https://w3id.org/grace/ontology/geometry
+:geometry rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :archive
+                                      :institution
+                                      :place
+                                    )
+                      ] ;
+          rdfs:range <http://www.opengis.net/ont/geosparql#geoJSONLiteral> .
+
+
 ###  https://w3id.org/grace/ontology/governs
 :governs rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :institution_object ;
@@ -679,6 +530,15 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:range :papal_grace ;
                    rdfs:comment "participant in an event of papal grace" ;
                    rdfs:label "grace stakeholder"@en .
+
+
+###  https://w3id.org/grace/ontology/has_father
+:has_father rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :has_participant ;
+            rdfs:domain :biographical_event ;
+            rdfs:range :person ;
+            rdfs:comment "A term used to describe the fatherhood relationship with regard to a subject of a biographical event." ;
+            rdfs:label "has father"@en .
 
 
 ###  https://w3id.org/grace/ontology/has_main_type
@@ -711,6 +571,15 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:domain :event ;
                     rdfs:range :monetary_value ;
                     rdfs:label "has monetary value"@en .
+
+
+###  https://w3id.org/grace/ontology/has_mother
+:has_mother rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :has_participant ;
+            rdfs:domain :biographical_event ;
+            rdfs:range :person ;
+            rdfs:comment "A term used to describe the motherhood relationship with regard to a subject of a biographical event." ;
+            rdfs:label "has mother"@en .
 
 
 ###  https://w3id.org/grace/ontology/has_option
@@ -954,9 +823,7 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/grace/ontology/lod
 :lod rdf:type owl:ObjectProperty ;
-     rdfs:domain :anything ;
-     rdfs:range xsd:anyURI ;
-     rdfs:label "LOD"@en .
+     rdfs:domain :anything .
 
 
 ###  https://w3id.org/grace/ontology/monetary_value_normalized
@@ -1487,66 +1354,23 @@ xsd:string rdf:type rdfs:Datatype .
 ###  https://w3id.org/grace/ontology/wikidata
 :wikidata rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :lod ;
-          rdfs:domain :anything ;
-          rdfs:range xsd:anyURI ;
-          rdfs:label "WikiData"@en .
+          rdfs:domain :anything .
+
+
+###  https://w3id.org/grace/ontology/wkt
+:wkt rdf:type owl:ObjectProperty ;
+     rdfs:domain [ rdf:type owl:Class ;
+                   owl:unionOf ( :archive
+                                 :institution
+                                 :place
+                               )
+                 ] ;
+     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> .
 
 
 #################################################################
 #    Data properties
 #################################################################
-
-###  https://g17.dhi-roma.it/raw/bow_objects
-<https://g17.dhi-roma.it/raw/bow_objects> rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf <https://g17.dhi-roma.it/raw/insights> ;
-                                          rdfs:domain <https://g17.dhi-roma.it/raw/analysis> ;
-                                          rdfs:range xsd:string ;
-                                          rdfs:comment "Bag of Words of types from related objects" ;
-                                          rdfs:label "bow objects"@en .
-
-
-###  https://g17.dhi-roma.it/raw/collection_name
-<https://g17.dhi-roma.it/raw/collection_name> rdf:type owl:DatatypeProperty ;
-                                              rdfs:domain <https://g17.dhi-roma.it/raw/collection> ;
-                                              rdfs:range xsd:string ;
-                                              rdfs:label "collection name"@en .
-
-
-###  https://g17.dhi-roma.it/raw/label_name
-<https://g17.dhi-roma.it/raw/label_name> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <https://g17.dhi-roma.it/raw/label> ;
-                                         rdfs:range xsd:string ;
-                                         rdfs:label "label name"@en .
-
-
-###  https://g17.dhi-roma.it/raw/span_end
-<https://g17.dhi-roma.it/raw/span_end> rdf:type owl:DatatypeProperty ;
-                                       rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                       rdfs:range xsd:integer ;
-                                       rdfs:label "span end"@en .
-
-
-###  https://g17.dhi-roma.it/raw/span_start
-<https://g17.dhi-roma.it/raw/span_start> rdf:type owl:DatatypeProperty ;
-                                         rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                         rdfs:range xsd:integer ;
-                                         rdfs:label "span start"@en .
-
-
-###  https://g17.dhi-roma.it/raw/span_text
-<https://g17.dhi-roma.it/raw/span_text> rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain <https://g17.dhi-roma.it/raw/element> ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:label "span text"@en .
-
-
-###  https://g17.dhi-roma.it/raw/transcription
-<https://g17.dhi-roma.it/raw/transcription> rdf:type owl:DatatypeProperty ;
-                                            rdfs:subPropertyOf :entry_literal ;
-                                            rdfs:domain :entry ;
-                                            rdfs:range xsd:string ;
-                                            rdfs:label "transcription"@en .
-
 
 ###  https://w3id.org/grace/ontology/abbreviated_name
 :abbreviated_name rdf:type owl:DatatypeProperty ;
@@ -1627,7 +1451,6 @@ xsd:string rdf:type rdfs:Datatype .
 ###  https://w3id.org/grace/ontology/contributor_literal
 :contributor_literal rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf :appellation_literal ;
-                     rdfs:domain <http://www.w3.org/ns/prov#person> ;
                      rdfs:range rdfs:Literal ;
                      rdfs:label "contributor literal"@en .
 
@@ -1674,6 +1497,11 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:domain :source ;
             rdfs:range xsd:decimal ;
             rdfs:label "dimensions"@en .
+
+
+###  https://w3id.org/grace/ontology/earthworks
+:earthworks rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/grace/ontology/ended
@@ -1742,15 +1570,7 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/grace/ontology/geometry
 :geometry rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :place_literal ;
-          rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :archive
-                                      :institution
-                                      :place
-                                    )
-                      ] ;
-          rdfs:range <http://www.opengis.net/ont/geosparql#geoJSONLiteral> ;
-          rdfs:label "geometry"@en .
+          rdfs:subPropertyOf :place_literal .
 
 
 ###  https://w3id.org/grace/ontology/given_name
@@ -1798,6 +1618,11 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:domain :type ;
        rdfs:range xsd:integer ;
        rdfs:label "level"@en .
+
+
+###  https://w3id.org/grace/ontology/lod
+:lod rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:anyURI .
 
 
 ###  https://w3id.org/grace/ontology/mid_date
@@ -1982,17 +1807,14 @@ xsd:string rdf:type rdfs:Datatype .
        rdfs:label "uuid5"@en .
 
 
+###  https://w3id.org/grace/ontology/wikidata
+:wikidata rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:anyURI .
+
+
 ###  https://w3id.org/grace/ontology/wkt
 :wkt rdf:type owl:DatatypeProperty ;
-     rdfs:subPropertyOf :place_literal ;
-     rdfs:domain [ rdf:type owl:Class ;
-                   owl:unionOf ( :archive
-                                 :institution
-                                 :place
-                               )
-                 ] ;
-     rdfs:range <http://www.opengis.net/ont/geosparql#wktLiteral> ;
-     rdfs:label "wkt"@en .
+     rdfs:subPropertyOf :place_literal .
 
 
 #################################################################
@@ -2000,119 +1822,11 @@ xsd:string rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://www.opengis.net/ont/geosparql#geoJSONLiteral
-<http://www.opengis.net/ont/geosparql#geoJSONLiteral> rdf:type owl:Class ;
-                                                      rdfs:subClassOf rdfs:Literal .
+<http://www.opengis.net/ont/geosparql#geoJSONLiteral> rdf:type owl:Class .
 
 
 ###  http://www.opengis.net/ont/geosparql#wktLiteral
-<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type owl:Class ;
-                                                  rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-rdf:Property rdf:type owl:Class ;
-             rdfs:label "Property"@en .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#Class
-rdfs:Class rdf:type owl:Class ;
-           rdfs:label "Class"@en .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#Datatype
-rdfs:Datatype rdf:type owl:Class ;
-              rdfs:subClassOf rdfs:Literal ;
-              rdfs:label "Datatype"@en .
-
-
-###  http://www.w3.org/2000/01/rdf-schema#Literal
-rdfs:Literal rdf:type owl:Class .
-
-
-###  http://www.w3.org/2001/XMLSchema#anyURI
-xsd:anyURI rdf:type owl:Class ;
-           rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#boolean
-xsd:boolean rdf:type owl:Class ;
-            rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#date
-xsd:date rdf:type owl:Class ;
-         rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#dateTime
-xsd:dateTime rdf:type owl:Class ;
-             rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#decimal
-xsd:decimal rdf:type owl:Class ;
-            rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#integer
-xsd:integer rdf:type owl:Class ;
-            rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#language
-xsd:language rdf:type owl:Class ;
-             rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#positiveInteger
-xsd:positiveInteger rdf:type owl:Class ;
-                    rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/2001/XMLSchema#string
-xsd:string rdf:type owl:Class ;
-           rdfs:subClassOf rdfs:Literal .
-
-
-###  http://www.w3.org/ns/prov#person
-<http://www.w3.org/ns/prov#person> rdf:type owl:Class ;
-                                   rdfs:label "person"@en .
-
-
-###  https://g17.dhi-roma.it/raw/analysis
-<https://g17.dhi-roma.it/raw/analysis> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://g17.dhi-roma.it/raw/raw_data> ;
-                                       rdfs:comment "a container of analytical insights in RDF" ;
-                                       rdfs:label "analysis"@en .
-
-
-###  https://g17.dhi-roma.it/raw/collection
-<https://g17.dhi-roma.it/raw/collection> rdf:type owl:Class ;
-                                         rdfs:subClassOf <https://g17.dhi-roma.it/raw/raw_data> ;
-                                         rdfs:label "collection"@en .
-
-
-###  https://g17.dhi-roma.it/raw/element
-<https://g17.dhi-roma.it/raw/element> rdf:type owl:Class ;
-                                      rdfs:subClassOf <https://g17.dhi-roma.it/raw/raw_data> ;
-                                      rdfs:label "element"@en .
-
-
-###  https://g17.dhi-roma.it/raw/information_object
-<https://g17.dhi-roma.it/raw/information_object> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <https://g17.dhi-roma.it/raw/raw_data> ;
-                                                 rdfs:label "Information Object"@en .
-
-
-###  https://g17.dhi-roma.it/raw/label
-<https://g17.dhi-roma.it/raw/label> rdf:type owl:Class ;
-                                    rdfs:subClassOf <https://g17.dhi-roma.it/raw/raw_data> ;
-                                    rdfs:label "label"@en .
-
-
-###  https://g17.dhi-roma.it/raw/raw_data
-<https://g17.dhi-roma.it/raw/raw_data> rdf:type owl:Class ;
-                                       rdfs:label "Raw Data"@en .
+<http://www.opengis.net/ont/geosparql#wktLiteral> rdf:type owl:Class .
 
 
 ###  https://w3id.org/grace/ontology/abbey
@@ -2161,6 +1875,14 @@ xsd:string rdf:type owl:Class ;
                      rdfs:subClassOf :papal_grace ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty :deceased_in_rome ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :during_sede_vancate ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :event_circumstances ;
                                        owl:cardinality "1"^^xsd:nonNegativeInteger
                                      ] ,
                                      [ rdf:type owl:Restriction ;
@@ -2269,6 +1991,14 @@ xsd:string rdf:type owl:Class ;
                     rdfs:subClassOf :event ,
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty :biography_subject ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_father ;
+                                      owl:cardinality "1"^^xsd:nonNegativeInteger
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :has_mother ;
                                       owl:cardinality "1"^^xsd:nonNegativeInteger
                                     ] ;
                     rdfs:label "biographical event"@en .
@@ -2952,57 +2682,27 @@ xsd:string rdf:type owl:Class ;
 #    Annotations
 #################################################################
 
-<http://www.opengis.net/ont/geosparql#geoJSONLiteral> rdfs:label "geoJSONLiteral"@en .
-
-
-<http://www.opengis.net/ont/geosparql#wktLiteral> rdfs:label "wktLiteral"@en .
-
-
-<http://www.opengis.net/ont/geosparql#http://www.opengis.net/ont/geosparql#> rdfs:label "OpenGIS"@en .
-
-
-rdfs:Literal rdfs:label "Literal"@en .
-
-
-rdfs:label rdfs:label "label"@en .
-
-
-xsd:anyURI rdfs:label "anyURI"@en .
-
-
-xsd:boolean rdfs:label "boolean"@en .
-
-
-xsd:date rdfs:label "date"@en .
-
-
-xsd:dateTime rdfs:label "dateTime"@en .
-
-
-xsd:decimal rdfs:label "decimal"@en .
-
-
-xsd:integer rdfs:label "integer"@en .
-
-
-xsd:language rdfs:label "language"@en .
-
-
-xsd:positiveInteger rdfs:label "positiveInteger"@en .
-
-
-xsd:string rdfs:label "string"@en .
-
-
-<https://g17.dhi-roma.it/raw/insights> rdfs:comment "properties from pre-calculated analytics" ;
-                                       rdfs:label "insights"@en .
-
-
 :date_object rdfs:label "date object"@en .
+
+
+:earthworks rdfs:comment "Polygons of the boundaries of ca. 750 dioceses across Latin Christendom as they appeared between 1200-1500. Rather than corresponding to any particular year, the map is an amalgam that displays all Latin dioceses that existed at some point during this period. The map excludes dioceses in the Latin East and in parts of eastern Europe whose boundaries are unknown (or were never established)." ;
+            rdfs:label "EarthWorks"@en .
+
+
+:geometry rdfs:label "geometry"@en .
+
+
+:lod rdfs:label "LOD"@en .
 
 
 :money_object rdfs:comment "the modality of a monetary interest, payment, or obligation" ;
               rdfs:label "money object"@en .
+
+
+:wikidata rdfs:label "WikiData"@en .
+
+
+:wkt rdfs:label "wkt"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

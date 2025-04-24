@@ -8,7 +8,7 @@
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasRevisionOf <https://w3id.org/grace/ontology/1.0.0>;
-	 prov:wasGeneratedAt "2025-04-03T16:26:28";
+	 prov:wasGeneratedAt "2025-04-24T11:09:53";
 .
 :agent0 a prov:Agent; foaf:name "Bruno Boute".
 :agent1 a prov:Agent; foaf:name "Christoph Sander".

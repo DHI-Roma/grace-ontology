@@ -7,27 +7,27 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:voaf="http://purl.org/vocommons/voaf#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/">
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="https://w3id.org/grace/ontology/">
         <owl:versionIRI rdf:resource="https://w3id.org/grace/ontology/1.0.1"/>
         <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
         <dc:title xml:lang="en">Graceful17 Ontology</dc:title>
-        <terms:created xml:lang="en">2025-04-03T16:26:28</terms:created>
+        <terms:created xml:lang="en">2025-04-24T11:09:53</terms:created>
         <terms:creator xml:lang="en">Bruno Boute</terms:creator>
         <terms:creator xml:lang="en">Christoph Sander</terms:creator>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
         <vann:preferredNamespacePrefix xml:lang="en">grace</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/grace/ontology/</vann:preferredNamespaceUri>
-        <voaf:extends rdf:resource="https://w3id.org/otherOntology"/>
-        <schema:citation xml:lang="en">Cite this vocabulary as: ....</schema:citation>
-        <rdfs:label>Example</rdfs:label>
+        <rdfs:label xml:lang="en">Graceful17 Ontology</rdfs:label>
         <owl:backwardCompatibleWith rdf:resource="https://w3id.org/grace/ontology/1.0.0"/>
         <owl:priorVersion rdf:resource="https://w3id.org/grace/ontology/1.0.0"/>
+        <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-24T11:09:53</prov:generatedAtTime>
+        <schema:citation xml:lang="en">Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)</schema:citation>
     </owl:Ontology>
     
 
@@ -86,17 +86,17 @@
     
 
 
-    <!-- http://purl.org/vocommons/voaf#extends -->
+    <!-- http://www.w3.org/ns/prov#generatedAtTime -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocommons/voaf#extends"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generatedAtTime"/>
     
 
 
-    <!-- http://schema.org/citation -->
+    <!-- https://schema.org/citation -->
 
 
-    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    <owl:AnnotationProperty rdf:about="https://schema.org/citation"/>
     
 
 
@@ -112,80 +112,10 @@
     
 
 
-    <!-- http://www.opengis.net/ont/geosparql#geoJSONLiteral -->
-
-
-    <rdfs:Datatype rdf:about="http://www.opengis.net/ont/geosparql#geoJSONLiteral"/>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#wktLiteral -->
-
-
-    <rdfs:Datatype rdf:about="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
-    
-
-
     <!-- http://www.w3.org/2001/XMLSchema#date -->
 
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#decimal"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#integer -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#language -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#language"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#positiveInteger -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
     
 
 
@@ -198,212 +128,6 @@
      -->
 
 
-    
-
-
-    <!-- https://credit.niso.org/contributor-roles/conceptualization -->
-
-
-    <owl:ObjectProperty rdf:about="https://credit.niso.org/contributor-roles/conceptualization">
-        <rdfs:comment>Ideas; formulation or evolution of overarching research goals and aims.</rdfs:comment>
-        <rdfs:label xml:lang="en">conceptualization</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://credit.niso.org/contributor-roles/data-curation -->
-
-
-    <owl:ObjectProperty rdf:about="https://credit.niso.org/contributor-roles/data-curation">
-        <rdfs:comment>Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later reuse.</rdfs:comment>
-        <rdfs:label xml:lang="en">data curation</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://credit.niso.org/contributor-roles/methodology -->
-
-
-    <owl:ObjectProperty rdf:about="https://credit.niso.org/contributor-roles/methodology">
-        <rdfs:comment>Development or design of methodology; creation of models.</rdfs:comment>
-        <rdfs:label xml:lang="en">methodology</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/belongs_to_entry -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/belongs_to_entry">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/entry"/>
-        <rdfs:label xml:lang="en">belongs to entry</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/credited -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/credited">
-        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/credit"/>
-        <rdfs:label xml:lang="en">credited</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/describes -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/describes">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/event"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/object"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">describes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/entity -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/entity">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:label xml:lang="en">entity</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/has_class -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/has_class">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/label"/>
-        <rdfs:label xml:lang="en">has class</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/has_elements -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/has_elements">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/entry"/>
-        <rdfs:range rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:label xml:lang="en">has elements</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/has_label -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/has_label">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="https://g17.dhi-roma.it/raw/label"/>
-        <rdfs:label xml:lang="en">has label</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/has_main_property -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/has_main_property">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/label"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/type"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:label xml:lang="en">has main property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/in_collection -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/in_collection">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/entry"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/source"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://g17.dhi-roma.it/raw/collection"/>
-        <rdfs:label xml:lang="en">in collection</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/insights -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/insights">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/anything"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/event"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/object"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://g17.dhi-roma.it/raw/analysis"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/is_described_by -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/is_described_by">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/refers_to"/>
-        <owl:inverseOf rdf:resource="https://g17.dhi-roma.it/raw/describes"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/event"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/object"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:label xml:lang="en">is described by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/ninox_record -->
-
-
-    <owl:ObjectProperty rdf:about="https://g17.dhi-roma.it/raw/ninox_record">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/lod"/>
-        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">Ninox Record</rdfs:label>
-    </owl:ObjectProperty>
     
 
 
@@ -645,14 +369,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/confidence">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://g17.dhi-roma.it/raw/information_object"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/description"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/description"/>
         <rdfs:range rdf:resource="https://w3id.org/grace/ontology/type"/>
         <rdfs:label xml:lang="en">confidence</rdfs:label>
     </owl:ObjectProperty>
@@ -718,7 +435,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/deceased_in_rome">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/type_assigned"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/event_circumstances"/>
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/event"/>
         <rdfs:range rdf:resource="https://w3id.org/grace/ontology/type"/>
         <rdfs:comment>Designation for someone who has died in Rome, often used in ecclesiastical records to denote the significant passing of church figures in the Vatican&apos;s vicinity.</rdfs:comment>
@@ -836,15 +553,25 @@
     
 
 
+    <!-- https://w3id.org/grace/ontology/during_sede_vancate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/during_sede_vancate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/event_circumstances"/>
+        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/event"/>
+        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/type"/>
+        <rdfs:comment>Vacancy occurred during which a diocese or archdiocese is without a prelate installed in office, with the prelate&apos;s office being the cathedral.</rdfs:comment>
+        <rdfs:label xml:lang="en">during sede vancate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/grace/ontology/earthworks -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/earthworks">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/lod"/>
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment>Polygons of the boundaries of ca. 750 dioceses across Latin Christendom as they appeared between 1200-1500. Rather than corresponding to any particular year, the map is an amalgam that displays all Latin dioceses that existed at some point during this period. The map excludes dioceses in the Latin East and in parts of eastern Europe whose boundaries are unknown (or were never established).</rdfs:comment>
-        <rdfs:label xml:lang="en">EarthWorks</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -865,6 +592,19 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/grace/ontology/entry"/>
         <rdfs:label xml:lang="en">entry object</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/event_circumstances -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/event_circumstances">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/type_assigned"/>
+        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/event"/>
+        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/type"/>
+        <rdfs:comment>circumstances of an event a categorical data</rdfs:comment>
+        <rdfs:label xml:lang="en">event circumstances</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1031,6 +771,24 @@
     
 
 
+    <!-- https://w3id.org/grace/ontology/geometry -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/geometry">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/archive"/>
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/institution"/>
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#geoJSONLiteral"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/grace/ontology/governs -->
 
 
@@ -1055,6 +813,19 @@
         <rdfs:range rdf:resource="https://w3id.org/grace/ontology/papal_grace"/>
         <rdfs:comment>participant in an event of papal grace</rdfs:comment>
         <rdfs:label xml:lang="en">grace stakeholder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/has_father -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/has_father">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/has_participant"/>
+        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/biographical_event"/>
+        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/person"/>
+        <rdfs:comment>A term used to describe the fatherhood relationship with regard to a subject of a biographical event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has father</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1098,6 +869,19 @@
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/event"/>
         <rdfs:range rdf:resource="https://w3id.org/grace/ontology/monetary_value"/>
         <rdfs:label xml:lang="en">has monetary value</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/has_mother -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/has_mother">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/has_participant"/>
+        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/biographical_event"/>
+        <rdfs:range rdf:resource="https://w3id.org/grace/ontology/person"/>
+        <rdfs:comment>A term used to describe the motherhood relationship with regard to a subject of a biographical event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has mother</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1458,8 +1242,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/lod">
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">LOD</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2238,8 +2020,24 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/wikidata">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/lod"/>
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/anything"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">WikiData</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/wkt -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/grace/ontology/wkt">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/archive"/>
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/institution"/>
+                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/place"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
     </owl:ObjectProperty>
     
 
@@ -2253,86 +2051,6 @@
      -->
 
 
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/bow_objects -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/bow_objects">
-        <rdfs:subPropertyOf rdf:resource="https://g17.dhi-roma.it/raw/insights"/>
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/analysis"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment>Bag of Words of types from related objects</rdfs:comment>
-        <rdfs:label xml:lang="en">bow objects</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/collection_name -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/collection_name">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/collection"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">collection name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/label_name -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/label_name">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/label"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">label name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/span_end -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/span_end">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label xml:lang="en">span end</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/span_start -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/span_start">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <rdfs:label xml:lang="en">span start</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/span_text -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/span_text">
-        <rdfs:domain rdf:resource="https://g17.dhi-roma.it/raw/element"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">span text</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/transcription -->
-
-
-    <owl:DatatypeProperty rdf:about="https://g17.dhi-roma.it/raw/transcription">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/entry_literal"/>
-        <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/entry"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">transcription</rdfs:label>
-    </owl:DatatypeProperty>
     
 
 
@@ -2456,7 +2174,6 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/contributor_literal">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/appellation_literal"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:label xml:lang="en">contributor literal</rdfs:label>
     </owl:DatatypeProperty>
@@ -2526,6 +2243,15 @@
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:label xml:lang="en">dimensions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/earthworks -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/earthworks">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -2631,17 +2357,6 @@
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/geometry">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/place_literal"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/archive"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/institution"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/place"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#geoJSONLiteral"/>
-        <rdfs:label xml:lang="en">geometry</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2713,6 +2428,15 @@
         <rdfs:domain rdf:resource="https://w3id.org/grace/ontology/type"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:label xml:lang="en">level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/grace/ontology/lod -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/lod">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     </owl:DatatypeProperty>
     
 
@@ -2990,22 +2714,20 @@
     
 
 
+    <!-- https://w3id.org/grace/ontology/wikidata -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/wikidata">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/grace/ontology/wkt -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/grace/ontology/wkt">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/grace/ontology/place_literal"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/archive"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/institution"/>
-                    <rdf:Description rdf:about="https://w3id.org/grace/ontology/place"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
-        <rdfs:label xml:lang="en">wkt</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3025,203 +2747,14 @@
     <!-- http://www.opengis.net/ont/geosparql#geoJSONLiteral -->
 
 
-    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#geoJSONLiteral"/>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#wktLiteral -->
 
 
-    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#wktLiteral">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Property -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
-        <rdfs:label xml:lang="en">Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
-        <rdfs:label xml:lang="en">Class</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Datatype -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:label xml:lang="en">Datatype</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#anyURI">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#date -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#date">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#dateTime -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#decimal -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#integer -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#integer">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#language -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#language">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#positiveInteger -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/prov#person -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/prov#person">
-        <rdfs:label xml:lang="en">person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/analysis -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/analysis">
-        <rdfs:subClassOf rdf:resource="https://g17.dhi-roma.it/raw/raw_data"/>
-        <rdfs:comment>a container of analytical insights in RDF</rdfs:comment>
-        <rdfs:label xml:lang="en">analysis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/collection -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/collection">
-        <rdfs:subClassOf rdf:resource="https://g17.dhi-roma.it/raw/raw_data"/>
-        <rdfs:label xml:lang="en">collection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/element -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/element">
-        <rdfs:subClassOf rdf:resource="https://g17.dhi-roma.it/raw/raw_data"/>
-        <rdfs:label xml:lang="en">element</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/information_object -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/information_object">
-        <rdfs:subClassOf rdf:resource="https://g17.dhi-roma.it/raw/raw_data"/>
-        <rdfs:label xml:lang="en">Information Object</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/label -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/label">
-        <rdfs:subClassOf rdf:resource="https://g17.dhi-roma.it/raw/raw_data"/>
-        <rdfs:label xml:lang="en">label</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://g17.dhi-roma.it/raw/raw_data -->
-
-
-    <owl:Class rdf:about="https://g17.dhi-roma.it/raw/raw_data">
-        <rdfs:label xml:lang="en">Raw Data</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#wktLiteral"/>
     
 
 
@@ -3298,6 +2831,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/deceased_in_rome"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/during_sede_vancate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/event_circumstances"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3464,6 +3009,18 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/biography_subject"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/has_father"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/grace/ontology/has_mother"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4549,58 +4106,28 @@
      -->
 
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#geoJSONLiteral">
-        <rdfs:label xml:lang="en">geoJSONLiteral</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#wktLiteral">
-        <rdfs:label xml:lang="en">wktLiteral</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#http://www.opengis.net/ont/geosparql#">
-        <rdfs:label xml:lang="en">OpenGIS</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
-        <rdfs:label xml:lang="en">Literal</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:label xml:lang="en">label</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyURI">
-        <rdfs:label xml:lang="en">anyURI</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
-        <rdfs:label xml:lang="en">boolean</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
-        <rdfs:label xml:lang="en">date</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
-        <rdfs:label xml:lang="en">dateTime</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
-        <rdfs:label xml:lang="en">decimal</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
-        <rdfs:label xml:lang="en">integer</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#language">
-        <rdfs:label xml:lang="en">language</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#positiveInteger">
-        <rdfs:label xml:lang="en">positiveInteger</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
-        <rdfs:label xml:lang="en">string</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://g17.dhi-roma.it/raw/insights">
-        <rdfs:comment>properties from pre-calculated analytics</rdfs:comment>
-        <rdfs:label xml:lang="en">insights</rdfs:label>
-    </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/grace/ontology/date_object">
         <rdfs:label xml:lang="en">date object</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/grace/ontology/earthworks">
+        <rdfs:comment>Polygons of the boundaries of ca. 750 dioceses across Latin Christendom as they appeared between 1200-1500. Rather than corresponding to any particular year, the map is an amalgam that displays all Latin dioceses that existed at some point during this period. The map excludes dioceses in the Latin East and in parts of eastern Europe whose boundaries are unknown (or were never established).</rdfs:comment>
+        <rdfs:label xml:lang="en">EarthWorks</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/grace/ontology/geometry">
+        <rdfs:label xml:lang="en">geometry</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/grace/ontology/lod">
+        <rdfs:label xml:lang="en">LOD</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://w3id.org/grace/ontology/money_object">
         <rdfs:comment>the modality of a monetary interest, payment, or obligation</rdfs:comment>
         <rdfs:label xml:lang="en">money object</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/grace/ontology/wikidata">
+        <rdfs:label xml:lang="en">WikiData</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/grace/ontology/wkt">
+        <rdfs:label xml:lang="en">wkt</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
