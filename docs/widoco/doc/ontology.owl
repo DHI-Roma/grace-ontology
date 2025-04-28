@@ -15,7 +15,7 @@
     <owl:Ontology rdf:about="https://w3id.org/grace/ontology/">
         <owl:versionIRI rdf:resource="https://w3id.org/grace/ontology/1.0.1"/>
         <owl:imports rdf:resource="http://www.w3.org/2000/01/rdf-schema"/>
-        <dc:title xml:lang="en">Grace Ontology</dc:title>
+        <dc:title xml:lang="en">GRACE Ontology</dc:title>
         <terms:created xml:lang="en">2025-04-24T11:09:53</terms:created>
         <terms:creator xml:lang="en">Bruno Boute</terms:creator>
         <terms:creator xml:lang="en">Christoph Sander</terms:creator>
@@ -23,7 +23,7 @@
         <bibo:status rdf:resource="http://purl.org/ontology/bibo/status/draft"/>
         <vann:preferredNamespacePrefix xml:lang="en">grace</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/grace/ontology/</vann:preferredNamespaceUri>
-        <rdfs:label xml:lang="en">Grace Ontology</rdfs:label>
+        <rdfs:label xml:lang="en">GRACE Ontology</rdfs:label>
         <owl:backwardCompatibleWith rdf:resource="https://w3id.org/grace/ontology/1.0.0"/>
         <owl:priorVersion rdf:resource="https://w3id.org/grace/ontology/1.0.0"/>
         <prov:generatedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-24T11:09:53</prov:generatedAtTime>

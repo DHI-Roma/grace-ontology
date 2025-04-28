@@ -4,12 +4,12 @@
     "languages" : [ "en", "undefined" ],
     "baseIris" : [ "https://w3id.org/grace/ontology", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.opengis.net/ont/geosparql" ],
     "title" : {
-      "en" : "Grace Ontology"
+      "en" : "GRACE Ontology"
     },
     "iri" : "https://w3id.org/grace/ontology/",
     "author" : [ "Christoph Sander", "Bruno Boute" ],
     "labels" : {
-      "en" : "Grace Ontology"
+      "en" : "GRACE Ontology"
     },
     "other" : {
       "license" : [ {
@@ -68,7 +68,7 @@
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
-        "value" : "Grace Ontology",
+        "value" : "GRACE Ontology",
         "type" : "label"
       } ],
       "backwardCompatibleWith" : [ {
@@ -141,7 +141,7 @@
     "id" : "194",
     "type" : "owl:Class"
   }, {
-    "id" : "204",
+    "id" : "202",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -231,7 +231,7 @@
     "id" : "238",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "203",
+    "id" : "204",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "105",
@@ -261,7 +261,7 @@
     "id" : "287",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "125",
+    "id" : "136",
     "type" : "rdfs:Literal"
   }, {
     "id" : "289",
@@ -360,7 +360,7 @@
     "id" : "200",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "323",
+    "id" : "322",
     "type" : "owl:Class"
   }, {
     "id" : "325",
@@ -427,54 +427,54 @@
     "type" : "owl:Class"
   }, {
     "id" : "341",
-    "type" : "owl:Thing"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "342",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "344",
     "type" : "owl:Thing"
   }, {
     "id" : "345",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Thing"
   }, {
     "id" : "347",
     "type" : "owl:Thing"
   }, {
     "id" : "348",
-    "type" : "owl:Thing"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "357",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "358",
+    "id" : "354",
     "type" : "owl:Thing"
   }, {
-    "id" : "359",
+    "id" : "358",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "360",
+    "id" : "359",
     "type" : "owl:Thing"
   }, {
-    "id" : "361",
+    "id" : "360",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "250",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "364",
+    "id" : "363",
     "type" : "owl:Thing"
   }, {
     "id" : "176",
     "type" : "owl:Class"
   }, {
-    "id" : "354",
+    "id" : "364",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "89",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "363",
+    "id" : "362",
     "type" : "rdfs:Literal"
   }, {
     "id" : "33",
@@ -525,7 +525,7 @@
     "id" : "26",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
     "id" : "68",
@@ -600,7 +600,7 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "446",
@@ -727,6 +727,16 @@
     "id" : "40",
     "superClasses" : [ "41" ]
   }, {
+    "iri" : "https://w3id.org/grace/ontology/serial_source",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "serial_source",
+      "en" : "serial source"
+    },
+    "id" : "42",
+    "superClasses" : [ "43" ]
+  }, {
     "iri" : "https://w3id.org/grace/ontology/unidentified_saint",
     "baseIri" : "https://w3id.org/grace/ontology",
     "instances" : 0,
@@ -736,16 +746,6 @@
     },
     "comment" : {
       "undefined" : "An individual saint of the Catholic Church"
-    },
-    "id" : "42",
-    "superClasses" : [ "43" ]
-  }, {
-    "iri" : "https://w3id.org/grace/ontology/serial_source",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "serial_source",
-      "en" : "serial source"
     },
     "id" : "44",
     "superClasses" : [ "45" ]
@@ -922,7 +922,7 @@
     "comment" : {
       "undefined" : "The highest administrative or governing body within a certain context, such as a government or ecclesiastical organization, responsible for overarching decision-making and policy."
     },
-    "id" : "204",
+    "id" : "202",
     "superClasses" : [ "59" ]
   }, {
     "iri" : "https://w3id.org/grace/ontology/anything",
@@ -932,7 +932,7 @@
       "IRI-based" : "anything",
       "en" : "anything"
     },
-    "subClasses" : [ "43", "55", "27", "33", "59", "11", "62", "21", "66", "68", "10", "53", "1", "4", "6", "8", "15" ],
+    "subClasses" : [ "45", "55", "27", "33", "59", "11", "62", "21", "66", "68", "10", "53", "1", "4", "6", "8", "15" ],
     "comment" : {
       "undefined" : "any named resource in the knowledge base"
     },
@@ -1001,7 +1001,7 @@
     "id" : "251"
   }, {
     "instances" : 0,
-    "union" : [ "43", "55", "27", "33", "59", "11", "21", "10", "53", "1", "4", "8", "2", "15" ],
+    "union" : [ "45", "55", "27", "33", "59", "11", "21", "10", "53", "1", "4", "8", "2", "15" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "252"
   }, {
@@ -1056,7 +1056,7 @@
     "superClasses" : [ "24" ]
   }, {
     "instances" : 0,
-    "union" : [ "43", "53", "27", "33", "59", "11", "2", "21" ],
+    "union" : [ "45", "53", "27", "33", "59", "11", "2", "21" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "269"
   }, {
@@ -1076,7 +1076,7 @@
     "id" : "274"
   }, {
     "instances" : 0,
-    "union" : [ "43", "53", "55", "27", "33", "59", "11", "21", "15" ],
+    "union" : [ "45", "53", "55", "27", "33", "59", "11", "21", "15" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "209"
   }, {
@@ -1086,7 +1086,7 @@
     "id" : "275"
   }, {
     "instances" : 0,
-    "union" : [ "43", "53", "55", "27", "59", "11", "2", "21" ],
+    "union" : [ "45", "53", "55", "27", "59", "11", "2", "21" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "276"
   }, {
@@ -1111,7 +1111,7 @@
     "id" : "208"
   }, {
     "instances" : 0,
-    "union" : [ "43", "55", "27", "33", "59", "11", "21", "10", "53", "1", "4", "8", "2", "15" ],
+    "union" : [ "45", "55", "27", "33", "59", "11", "21", "10", "53", "1", "4", "8", "2", "15" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "277"
   }, {
@@ -1124,7 +1124,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "203",
+    "id" : "204",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -1210,7 +1210,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "125",
+    "id" : "136",
     "label" : {
       "undefined" : "Literal"
     }
@@ -1515,7 +1515,7 @@
     "comment" : {
       "undefined" : "A church building or establishment where a vicar serves, often provided as part of a benefice that includes living quarters and a stipend."
     },
-    "id" : "323",
+    "id" : "322",
     "superClasses" : [ "47" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1607,7 +1607,7 @@
       "undefined" : "A concept or event that is considered a Mystery of Faithy by the Catholic Church"
     },
     "id" : "163",
-    "superClasses" : [ "43" ]
+    "superClasses" : [ "45" ]
   }, {
     "iri" : "https://w3id.org/grace/ontology/hospital",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -1701,19 +1701,19 @@
       "en" : "correspondance"
     },
     "id" : "340",
-    "superClasses" : [ "45" ]
+    "superClasses" : [ "43" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "341",
+    "label" : {
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "341",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "342",
     "label" : {
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -1723,10 +1723,11 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
     "id" : "345",
     "label" : {
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
@@ -1736,11 +1737,10 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "348",
     "label" : {
-      "undefined" : "Thing"
+      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1751,27 +1751,27 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "358",
+    "id" : "354",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "359",
+    "id" : "358",
     "label" : {
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "360",
+    "id" : "359",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "361",
+    "id" : "360",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1785,7 +1785,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "364",
+    "id" : "363",
     "label" : {
       "undefined" : "Thing"
     }
@@ -1805,7 +1805,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "354",
+    "id" : "364",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -1819,7 +1819,7 @@
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "363",
+    "id" : "362",
     "label" : {
       "undefined" : "Literal"
     }
@@ -2012,11 +2012,11 @@
       "IRI-based" : "dedication",
       "en" : "dedication"
     },
-    "subClasses" : [ "42", "163", "165" ],
+    "subClasses" : [ "44", "163", "165" ],
     "comment" : {
       "undefined" : "to be discussed"
     },
-    "id" : "43",
+    "id" : "45",
     "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/grace/ontology/credit",
@@ -2046,7 +2046,7 @@
       "IRI-based" : "seat_of_worship",
       "en" : "seat of worship"
     },
-    "subClasses" : [ "167", "169", "171", "149", "153", "155", "157", "142", "161", "101", "103", "107", "110", "396", "46", "397", "323" ],
+    "subClasses" : [ "167", "169", "171", "149", "153", "155", "157", "142", "161", "101", "103", "107", "110", "396", "46", "397", "322" ],
     "comment" : {
       "undefined" : "auto-generated from erectChurch()"
     },
@@ -2113,7 +2113,7 @@
       "undefined" : "An individual saint of the Catholic Church"
     },
     "id" : "165",
-    "superClasses" : [ "43" ]
+    "superClasses" : [ "45" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Container",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -2236,7 +2236,7 @@
       "IRI-based" : "institution",
       "en" : "institution"
     },
-    "subClasses" : [ "174", "204", "111", "382", "420", "318", "421", "47", "416" ],
+    "subClasses" : [ "174", "202", "111", "382", "420", "318", "421", "47", "416" ],
     "id" : "59",
     "superClasses" : [ "2" ]
   }, {
@@ -2271,7 +2271,7 @@
       "en" : "parish"
     },
     "comment" : {
-      "undefined" : "A primary ecclesiastical unit providing religious services and community support to a localized area, typically led by a parish priest."
+      "undefined" : "A parish is a local community of the faithful within a diocese, entrusted to a parish priest for pastoral care, worship, and administration of sacraments."
     },
     "id" : "420",
     "superClasses" : [ "59" ]
@@ -2331,8 +2331,8 @@
       "IRI-based" : "textual_source",
       "en" : "textual source"
     },
-    "subClasses" : [ "340", "44" ],
-    "id" : "45",
+    "subClasses" : [ "340", "42" ],
+    "id" : "43",
     "superClasses" : [ "178" ]
   }, {
     "iri" : "https://w3id.org/grace/ontology/birth",
@@ -2387,7 +2387,7 @@
       "IRI-based" : "physical_source",
       "en" : "physical source"
     },
-    "subClasses" : [ "45" ],
+    "subClasses" : [ "43" ],
     "id" : "178",
     "superClasses" : [ "1" ]
   }, {
@@ -2782,11 +2782,11 @@
     "id" : "17",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "124",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "77",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "137",
     "type" : "owl:objectProperty"
@@ -2881,7 +2881,7 @@
     "id" : "201",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "202",
+    "id" : "203",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "205",
@@ -2959,7 +2959,7 @@
     "id" : "245",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "126",
+    "id" : "124",
     "type" : "owl:objectProperty"
   }, {
     "id" : "248",
@@ -2968,13 +2968,13 @@
     "id" : "249",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "133",
+    "id" : "131",
     "type" : "owl:objectProperty"
   }, {
     "id" : "120",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "136",
+    "id" : "134",
     "type" : "owl:objectProperty"
   }, {
     "id" : "260",
@@ -3010,7 +3010,7 @@
     "id" : "293",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "130",
+    "id" : "128",
     "type" : "owl:objectProperty"
   }, {
     "id" : "294",
@@ -3046,7 +3046,7 @@
     "id" : "321",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "322",
+    "id" : "323",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "324",
@@ -3055,13 +3055,13 @@
     "id" : "331",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "332",
+    "id" : "333",
     "type" : "owl:objectProperty"
   }, {
     "id" : "334",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "135",
+    "id" : "133",
     "type" : "owl:objectProperty"
   }, {
     "id" : "343",
@@ -3083,12 +3083,12 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "353",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "356",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "362",
+    "id" : "361",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "365",
@@ -3128,7 +3128,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "389",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "390",
     "type" : "rdfs:SubClassOf"
@@ -3145,10 +3145,10 @@
     "id" : "393",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "128",
+    "id" : "126",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
     "id" : "395",
@@ -3203,7 +3203,7 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "355",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "410",
     "type" : "owl:objectProperty"
@@ -3229,7 +3229,7 @@
     "id" : "419",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "129",
+    "id" : "127",
     "type" : "owl:objectProperty"
   }, {
     "id" : "422",
@@ -3241,13 +3241,13 @@
     "id" : "424",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "127",
+    "id" : "125",
     "type" : "owl:objectProperty"
   }, {
     "id" : "425",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "131",
+    "id" : "129",
     "type" : "owl:objectProperty"
   }, {
     "id" : "426",
@@ -3283,7 +3283,7 @@
     "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "13",
+    "id" : "12",
     "type" : "owl:objectProperty"
   }, {
     "id" : "261",
@@ -3340,7 +3340,7 @@
     "id" : "455",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "134",
+    "id" : "132",
     "type" : "owl:objectProperty"
   }, {
     "id" : "119",
@@ -3388,23 +3388,23 @@
     "id" : "468",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "114",
+    "id" : "115",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "115",
+    "id" : "114",
     "type" : "owl:objectProperty"
   }, {
     "id" : "470",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "333",
+    "id" : "332",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "375",
     "type" : "owl:objectProperty"
   }, {
     "id" : "471",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "375",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "472",
     "type" : "rdfs:SubClassOf"
@@ -3436,10 +3436,10 @@
     "id" : "480",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "268",
+    "id" : "113",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "113",
+    "id" : "268",
     "type" : "owl:objectProperty"
   }, {
     "id" : "386",
@@ -3484,11 +3484,11 @@
     "id" : "487",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "488",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "112",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "488",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "387",
     "type" : "owl:objectProperty"
@@ -3496,7 +3496,7 @@
     "id" : "489",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "132",
+    "id" : "130",
     "type" : "owl:objectProperty"
   }, {
     "id" : "439",
@@ -3505,22 +3505,22 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "2",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "5"
   }, {
     "range" : "2",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "7"
   }, {
     "iri" : "https://w3id.org/grace/ontology/testifies_to_object",
@@ -3540,7 +3540,7 @@
   }, {
     "range" : "2",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
     "iri" : "https://w3id.org/grace/ontology/identifier_object",
@@ -3558,17 +3558,17 @@
   }, {
     "range" : "21",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "range" : "21",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
     "range" : "27",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "25"
   }, {
     "iri" : "https://w3id.org/grace/ontology/ranking",
@@ -3650,57 +3650,57 @@
   }, {
     "range" : "2",
     "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "51"
   }, {
     "range" : "2",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "52"
   }, {
     "range" : "2",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "54"
   }, {
     "range" : "2",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "2",
     "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "57"
   }, {
     "range" : "2",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "2",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "range" : "2",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "2",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "range" : "2",
     "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "2",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "67"
   }, {
     "iri" : "https://w3id.org/grace/ontology/broader",
@@ -3724,12 +3724,12 @@
     },
     "superproperty" : [ "72" ],
     "domain" : "21",
-    "attributes" : [ "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric" ],
     "id" : "71"
   }, {
     "range" : "2",
-    "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "73"
   }, {
     "iri" : "https://w3id.org/grace/ontology/in_source",
@@ -3893,12 +3893,12 @@
   }, {
     "range" : "47",
     "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "range" : "47",
     "domain" : "103",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "iri" : "https://w3id.org/grace/ontology/fixed_amount",
@@ -3914,12 +3914,12 @@
   }, {
     "range" : "47",
     "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "range" : "47",
     "domain" : "110",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "109"
   }, {
     "iri" : "https://w3id.org/grace/ontology/refers_to",
@@ -3930,23 +3930,12 @@
       "en" : "refers to"
     },
     "domain" : "2",
-    "subproperty" : [ "112", "16", "113", "114", "115", "75", "72", "116", "117", "118", "39", "13", "12", "119", "120", "121", "122", "123" ],
+    "subproperty" : [ "112", "16", "113", "114", "115", "75", "72", "116", "117", "118", "39", "12", "13", "119", "120", "121", "122", "123" ],
     "comment" : {
       "undefined" : "A wildcard property to find any direct entity relation"
     },
     "attributes" : [ "object" ],
     "id" : "17"
-  }, {
-    "iri" : "https://w3id.org/grace/ontology/date_literal",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "125",
-    "label" : {
-      "IRI-based" : "date_literal",
-      "en" : "date literal"
-    },
-    "domain" : "33",
-    "attributes" : [ "datatype" ],
-    "id" : "124"
   }, {
     "iri" : "https://w3id.org/grace/ontology/has_participant",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -3957,9 +3946,20 @@
     },
     "superproperty" : [ "115" ],
     "domain" : "21",
-    "subproperty" : [ "126", "127", "83", "128", "129", "76", "130", "131", "132", "133", "134", "135", "136" ],
+    "subproperty" : [ "124", "125", "83", "126", "127", "76", "128", "129", "130", "131", "132", "133", "134" ],
     "attributes" : [ "object" ],
     "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/grace/ontology/date_literal",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "date_literal",
+      "en" : "date literal"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "135"
   }, {
     "iri" : "https://w3id.org/grace/ontology/geometry",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4031,7 +4031,7 @@
   }, {
     "range" : "47",
     "domain" : "149",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "148"
   }, {
     "iri" : "https://w3id.org/grace/ontology/archive_object",
@@ -4049,22 +4049,22 @@
   }, {
     "range" : "47",
     "domain" : "153",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "152"
   }, {
     "range" : "47",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "154"
   }, {
     "range" : "47",
     "domain" : "157",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "156"
   }, {
     "range" : "47",
     "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "158"
   }, {
     "iri" : "https://w3id.org/grace/ontology/dedication_of",
@@ -4075,38 +4075,38 @@
       "en" : "dedication of"
     },
     "superproperty" : [ "119" ],
-    "domain" : "43",
+    "domain" : "45",
     "attributes" : [ "object" ],
     "id" : "159"
   }, {
     "range" : "47",
     "domain" : "161",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "160"
   }, {
-    "range" : "43",
+    "range" : "45",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
-    "range" : "43",
+    "range" : "45",
     "domain" : "165",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
     "range" : "47",
     "domain" : "167",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
     "range" : "47",
     "domain" : "169",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "168"
   }, {
     "range" : "47",
     "domain" : "171",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "170"
   }, {
     "iri" : "https://w3id.org/grace/ontology/has_top_term",
@@ -4123,52 +4123,52 @@
   }, {
     "range" : "15",
     "domain" : "180",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "179"
   }, {
     "range" : "53",
     "domain" : "182",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
     "range" : "53",
     "domain" : "184",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "183"
   }, {
     "range" : "4",
     "domain" : "186",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "185"
   }, {
-    "range" : "43",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "45",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
     "range" : "98",
     "domain" : "189",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "188"
   }, {
     "range" : "191",
     "domain" : "99",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "190"
   }, {
     "range" : "191",
     "domain" : "193",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "192"
   }, {
     "range" : "191",
     "domain" : "197",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
     "range" : "15",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "198"
   }, {
     "iri" : "https://w3id.org/grace/ontology/place_name",
@@ -4184,19 +4184,19 @@
   }, {
     "range" : "15",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "201"
   }, {
     "iri" : "https://w3id.org/grace/ontology/floating_amount",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "203",
+    "range" : "204",
     "label" : {
       "IRI-based" : "floating_amount",
       "en" : "floating amount"
     },
     "domain" : "55",
     "attributes" : [ "datatype" ],
-    "id" : "202"
+    "id" : "203"
   }, {
     "iri" : "https://w3id.org/grace/ontology/object_related_to_object_directed",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4205,7 +4205,7 @@
       "IRI-based" : "object_related_to_object_directed",
       "en" : "object related to object directed"
     },
-    "superproperty" : [ "13" ],
+    "superproperty" : [ "12" ],
     "domain" : "11",
     "comment" : {
       "undefined" : "An object that is related to another object, a non-symmetrical property."
@@ -4254,22 +4254,22 @@
   }, {
     "range" : "27",
     "domain" : "212",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "211"
   }, {
     "range" : "20",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "213"
   }, {
     "range" : "20",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "215"
   }, {
     "range" : "20",
     "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "217"
   }, {
     "iri" : "https://w3id.org/grace/ontology/shelf_mark",
@@ -4285,7 +4285,7 @@
   }, {
     "range" : "27",
     "domain" : "221",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "220"
   }, {
     "iri" : "https://w3id.org/grace/ontology/person_literal",
@@ -4301,32 +4301,32 @@
   }, {
     "range" : "27",
     "domain" : "225",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
     "range" : "27",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
     "range" : "27",
     "domain" : "228",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "227"
   }, {
     "range" : "27",
     "domain" : "230",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "229"
   }, {
     "range" : "27",
     "domain" : "232",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "231"
   }, {
     "range" : "27",
     "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "233"
   }, {
     "iri" : "https://w3id.org/grace/ontology/source_literal",
@@ -4358,7 +4358,7 @@
       "IRI-based" : "dedication_scope",
       "en" : "dedication scope"
     },
-    "domain" : "43",
+    "domain" : "45",
     "comment" : {
       "undefined" : "The entity or compound this dedication extends to"
     },
@@ -4402,17 +4402,17 @@
   }, {
     "range" : "27",
     "domain" : "243",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "242"
   }, {
     "range" : "27",
     "domain" : "108",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "244"
   }, {
     "range" : "27",
     "domain" : "246",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "245"
   }, {
     "iri" : "https://w3id.org/grace/ontology/current_possessor",
@@ -4428,7 +4428,7 @@
       "undefined" : "A term used to describe an individual who currently holds a benefice or position, relevant in administrative, legal, and ecclesiastical contexts."
     },
     "attributes" : [ "object" ],
-    "id" : "126"
+    "id" : "124"
   }, {
     "iri" : "https://w3id.org/grace/ontology/type_of_archive",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4470,7 +4470,7 @@
       "undefined" : "An individual or institution with the legal authority to appoint or recommend candidates for ecclesiastical offices, typically rooted in historical rights or privileges."
     },
     "attributes" : [ "object" ],
-    "id" : "133"
+    "id" : "131"
   }, {
     "iri" : "https://w3id.org/grace/ontology/object_described_by_entity",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4497,7 +4497,7 @@
       "undefined" : "A term used to describe someone who has received a benefit, office, or provision from an ecclesiastical authority."
     },
     "attributes" : [ "object" ],
-    "id" : "136"
+    "id" : "134"
   }, {
     "iri" : "https://w3id.org/grace/ontology/place_information_within_church_name",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4573,13 +4573,13 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/related_to_saint",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "related_to_saint",
       "en" : "related to saint"
     },
     "superproperty" : [ "122" ],
-    "domain" : "43",
+    "domain" : "45",
     "attributes" : [ "object" ],
     "id" : "273"
   }, {
@@ -4644,7 +4644,7 @@
       "IRI-based" : "dedication_literal",
       "en" : "dedication literal"
     },
-    "domain" : "43",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
     "id" : "293"
   }, {
@@ -4661,7 +4661,7 @@
       "undefined" : "A cardinal assigned specific responsibilities, often administrative or liturgical, reflecting their integral role in the governance of the Church and their close collaboration with the Pope."
     },
     "attributes" : [ "object" ],
-    "id" : "130"
+    "id" : "128"
   }, {
     "iri" : "https://w3id.org/grace/ontology/ended",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4833,7 +4833,7 @@
     },
     "domain" : "313",
     "attributes" : [ "datatype" ],
-    "id" : "322"
+    "id" : "323"
   }, {
     "iri" : "https://w3id.org/grace/ontology/disambiguation_of_a_location_of_an_institution",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4851,6 +4851,19 @@
     "attributes" : [ "object" ],
     "id" : "324"
   }, {
+    "iri" : "https://w3id.org/grace/ontology/object_related_to_event",
+    "inverse" : "332",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "object_related_to_event",
+      "en" : "object related to event"
+    },
+    "superproperty" : [ "72" ],
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "331"
+  }, {
     "iri" : "https://w3id.org/grace/ontology/has_territory",
     "baseIri" : "https://w3id.org/grace/ontology",
     "range" : "230",
@@ -4861,20 +4874,7 @@
     "superproperty" : [ "118" ],
     "domain" : "59",
     "attributes" : [ "object" ],
-    "id" : "331"
-  }, {
-    "iri" : "https://w3id.org/grace/ontology/object_related_to_event",
-    "inverse" : "333",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "object_related_to_event",
-      "en" : "object related to event"
-    },
-    "superproperty" : [ "72" ],
-    "domain" : "11",
-    "attributes" : [ "object" ],
-    "id" : "332"
+    "id" : "333"
   }, {
     "iri" : "https://w3id.org/grace/ontology/institution_name",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -4901,11 +4901,11 @@
       "undefined" : "A term used to describe the motherhood relationship with regard to a subject of a biographical event."
     },
     "attributes" : [ "object" ],
-    "id" : "135"
+    "id" : "133"
   }, {
     "range" : "174",
     "domain" : "175",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "343"
   }, {
     "iri" : "https://w3id.org/grace/ontology/confidence",
@@ -4971,7 +4971,7 @@
     },
     "superproperty" : [ "17" ],
     "domain" : "351",
-    "subproperty" : [ "84", "352", "332", "71" ],
+    "subproperty" : [ "84", "352", "331", "71" ],
     "attributes" : [ "object" ],
     "id" : "72"
   }, {
@@ -4983,8 +4983,8 @@
       "en" : "WikiData"
     },
     "superproperty" : [ "355" ],
-    "domain" : "341",
-    "attributes" : [ "datatype" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
     "id" : "353"
   }, {
     "iri" : "https://w3id.org/grace/ontology/care_of_souls",
@@ -5005,14 +5005,14 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/type_literal",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "363",
+    "range" : "362",
     "label" : {
       "IRI-based" : "type_literal",
       "en" : "type literal"
     },
     "domain" : "15",
     "attributes" : [ "datatype" ],
-    "id" : "362"
+    "id" : "361"
   }, {
     "iri" : "https://w3id.org/grace/ontology/type_of_dedication",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -5022,7 +5022,7 @@
       "en" : "type of dedication"
     },
     "superproperty" : [ "147" ],
-    "domain" : "43",
+    "domain" : "45",
     "comment" : {
       "undefined" : "The primary type of a dedication"
     },
@@ -5073,7 +5073,7 @@
       "IRI-based" : "contributor_literal",
       "en" : "contributor literal"
     },
-    "domain" : "341",
+    "domain" : "344",
     "attributes" : [ "datatype" ],
     "id" : "377"
   }, {
@@ -5178,27 +5178,27 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/earthworks",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "285",
+    "range" : "354",
     "label" : {
       "IRI-based" : "earthworks",
       "en" : "EarthWorks"
     },
     "superproperty" : [ "355" ],
-    "domain" : "364",
+    "domain" : "2",
     "comment" : {
       "undefined" : "Polygons of the boundaries of ca. 750 dioceses across Latin Christendom as they appeared between 1200-1500. Rather than corresponding to any particular year, the map is an amalgam that displays all Latin dioceses that existed at some point during this period. The map excludes dioceses in the Latin East and in parts of eastern Europe whose boundaries are unknown (or were never established)."
     },
-    "attributes" : [ "datatype" ],
+    "attributes" : [ "object" ],
     "id" : "389"
   }, {
     "range" : "174",
     "domain" : "177",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "390"
   }, {
     "range" : "174",
     "domain" : "176",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "391"
   }, {
     "iri" : "https://w3id.org/grace/ontology/in_ecclesiastical_province",
@@ -5218,7 +5218,7 @@
   }, {
     "range" : "1",
     "domain" : "178",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "392"
   }, {
     "iri" : "https://w3id.org/grace/ontology/transcription_preview",
@@ -5246,7 +5246,7 @@
       "undefined" : "A term used to describe the fatherhood relationship with regard to a subject of a biographical event."
     },
     "attributes" : [ "object" ],
-    "id" : "128"
+    "id" : "126"
   }, {
     "iri" : "https://w3id.org/grace/ontology/testifies_to",
     "inverse" : "268",
@@ -5263,7 +5263,7 @@
       "undefined" : "A characteristic of a record or document indicating that it serves as evidence or confirmation of an event, fact, or status."
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/grace/ontology/primary_place",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -5331,7 +5331,7 @@
       "IRI-based" : "testifies_to_event",
       "en" : "testifies to event"
     },
-    "superproperty" : [ "12", "72" ],
+    "superproperty" : [ "13", "72" ],
     "domain" : "10",
     "comment" : {
       "undefined" : "A characteristic of a record or document indicating that it serves as evidence or confirmation of an event, fact, or status."
@@ -5373,7 +5373,7 @@
     "comment" : {
       "undefined" : "Some person being related to another person by kinship"
     },
-    "attributes" : [ "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric" ],
     "id" : "405"
   }, {
     "iri" : "https://w3id.org/grace/ontology/religious_order",
@@ -5409,7 +5409,7 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/dedication_object",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "dedication_object",
       "en" : "dedication object"
@@ -5487,14 +5487,14 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/lod",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "328",
+    "range" : "354",
     "label" : {
       "IRI-based" : "lod",
       "en" : "LOD"
     },
-    "domain" : "358",
+    "domain" : "2",
     "subproperty" : [ "353", "389" ],
-    "attributes" : [ "datatype" ],
+    "attributes" : [ "object" ],
     "id" : "355"
   }, {
     "iri" : "https://w3id.org/grace/ontology/object_related_to_object",
@@ -5504,12 +5504,12 @@
       "IRI-based" : "object_related_to_object",
       "en" : "object related to object"
     },
-    "superproperty" : [ "13" ],
+    "superproperty" : [ "12" ],
     "domain" : "11",
     "comment" : {
       "undefined" : "An object that is related to another object, a symmetrical property."
     },
-    "attributes" : [ "symmetric", "object" ],
+    "attributes" : [ "object", "symmetric" ],
     "id" : "410"
   }, {
     "iri" : "https://w3id.org/grace/ontology/name_suffix",
@@ -5565,7 +5565,7 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/benefice_title",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "benefice_title",
       "en" : "benefice title"
@@ -5597,7 +5597,7 @@
       "IRI-based" : "title",
       "en" : "title"
     },
-    "domain" : "43",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
     "id" : "419"
   }, {
@@ -5615,7 +5615,7 @@
       "undefined" : "A term used to describe someone who has received a benefit, office, or provision from an ecclesiastical authority."
     },
     "attributes" : [ "object" ],
-    "id" : "129"
+    "id" : "127"
   }, {
     "iri" : "https://w3id.org/grace/ontology/expedition_date",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -5671,7 +5671,7 @@
       "undefined" : "A cardinal who has been granted an indult, which is a special permission or privilege, typically for a specific purpose outside the usual norms of ecclesiastical law."
     },
     "attributes" : [ "object" ],
-    "id" : "127"
+    "id" : "125"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#member",
     "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
@@ -5708,46 +5708,46 @@
       "undefined" : "A person who exerts influence over the appointment of ecclesiastical positions through personal or political connections, rather than formal legal rights."
     },
     "attributes" : [ "object" ],
-    "id" : "131"
+    "id" : "129"
   }, {
     "range" : "81",
     "domain" : "427",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "426"
   }, {
     "range" : "81",
     "domain" : "381",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "428"
   }, {
     "range" : "81",
     "domain" : "173",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "429"
   }, {
     "range" : "81",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "430"
   }, {
     "range" : "283",
     "domain" : "432",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "431"
   }, {
     "range" : "283",
     "domain" : "282",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "433"
   }, {
     "range" : "283",
     "domain" : "376",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "434"
   }, {
     "range" : "81",
     "domain" : "385",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "435"
   }, {
     "iri" : "https://w3id.org/grace/ontology/place_of_event",
@@ -5788,7 +5788,7 @@
     },
     "superproperty" : [ "17" ],
     "domain" : "258",
-    "subproperty" : [ "437", "380", "261", "438", "395", "312", "331" ],
+    "subproperty" : [ "437", "380", "261", "438", "395", "312", "333" ],
     "attributes" : [ "object" ],
     "id" : "118"
   }, {
@@ -5801,9 +5801,9 @@
     },
     "superproperty" : [ "17" ],
     "domain" : "271",
-    "subproperty" : [ "410", "9", "333", "205", "439" ],
+    "subproperty" : [ "410", "9", "332", "205", "439" ],
     "attributes" : [ "object" ],
-    "id" : "13"
+    "id" : "12"
   }, {
     "iri" : "https://w3id.org/grace/ontology/related_to_place",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -5849,34 +5849,34 @@
     "attributes" : [ "object" ],
     "id" : "368"
   }, {
-    "range" : "45",
-    "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "441"
   }, {
     "range" : "178",
-    "domain" : "45",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "442"
   }, {
     "range" : "24",
     "domain" : "283",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "443"
   }, {
     "range" : "24",
     "domain" : "263",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "444"
   }, {
     "range" : "24",
     "domain" : "446",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "445"
   }, {
     "range" : "24",
     "domain" : "195",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "447"
   }, {
     "iri" : "https://w3id.org/grace/ontology/related_institution",
@@ -5896,7 +5896,7 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/church_title",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "church_title",
       "en" : "church title"
@@ -5911,27 +5911,27 @@
   }, {
     "range" : "11",
     "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "450"
   }, {
     "range" : "81",
     "domain" : "402",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "451"
   }, {
     "range" : "81",
     "domain" : "412",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "452"
   }, {
     "range" : "10",
     "domain" : "394",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "453"
   }, {
-    "range" : "45",
+    "range" : "43",
     "domain" : "340",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "454"
   }, {
     "iri" : "https://w3id.org/grace/ontology/falls_within_calculated",
@@ -5948,7 +5948,7 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/uuid5",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "361",
+    "range" : "360",
     "label" : {
       "IRI-based" : "uuid5",
       "en" : "uuid5"
@@ -5973,7 +5973,7 @@
       "undefined" : "An official appointed to ensure the execution of ecclesiastical laws and decisions, often tasked with overseeing adherence to canonical directives in specific contexts or situations."
     },
     "attributes" : [ "object" ],
-    "id" : "134"
+    "id" : "132"
   }, {
     "iri" : "https://w3id.org/grace/ontology/institution_object",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -5990,7 +5990,7 @@
   }, {
     "range" : "59",
     "domain" : "420",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "456"
   }, {
     "iri" : "https://w3id.org/grace/ontology/pension_value",
@@ -6010,22 +6010,22 @@
   }, {
     "range" : "59",
     "domain" : "318",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "457"
   }, {
     "range" : "59",
     "domain" : "421",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "458"
   }, {
     "range" : "59",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "459"
   }, {
     "range" : "59",
     "domain" : "416",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "460"
   }, {
     "iri" : "https://w3id.org/grace/ontology/cool_id",
@@ -6041,32 +6041,32 @@
   }, {
     "range" : "195",
     "domain" : "194",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "462"
   }, {
     "range" : "10",
     "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "463"
   }, {
     "range" : "10",
     "domain" : "413",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "464"
   }, {
     "range" : "59",
-    "domain" : "204",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "202",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "465"
   }, {
     "range" : "59",
     "domain" : "111",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "466"
   }, {
     "range" : "59",
     "domain" : "382",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "467"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
@@ -6091,19 +6091,6 @@
     "attributes" : [ "external", "object" ],
     "id" : "468"
   }, {
-    "iri" : "https://w3id.org/grace/ontology/date_object",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "33",
-    "label" : {
-      "IRI-based" : "date_object",
-      "en" : "date object"
-    },
-    "superproperty" : [ "17" ],
-    "domain" : "469",
-    "subproperty" : [ "415" ],
-    "attributes" : [ "object" ],
-    "id" : "114"
-  }, {
     "iri" : "https://w3id.org/grace/ontology/person_object",
     "baseIri" : "https://w3id.org/grace/ontology",
     "range" : "53",
@@ -6116,6 +6103,19 @@
     "subproperty" : [ "405", "77" ],
     "attributes" : [ "object" ],
     "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/grace/ontology/date_object",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "date_object",
+      "en" : "date object"
+    },
+    "superproperty" : [ "17" ],
+    "domain" : "469",
+    "subproperty" : [ "415" ],
+    "attributes" : [ "object" ],
+    "id" : "114"
   }, {
     "iri" : "https://w3id.org/grace/ontology/institution_literal",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -6135,21 +6135,10 @@
       "IRI-based" : "event_related_to_object",
       "en" : "event related to object"
     },
-    "superproperty" : [ "13" ],
+    "superproperty" : [ "12" ],
     "domain" : "21",
     "attributes" : [ "object" ],
-    "id" : "333"
-  }, {
-    "iri" : "https://w3id.org/grace/ontology/given_name",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "339",
-    "label" : {
-      "IRI-based" : "given_name",
-      "en" : "given name"
-    },
-    "domain" : "53",
-    "attributes" : [ "datatype" ],
-    "id" : "471"
+    "id" : "332"
   }, {
     "iri" : "https://w3id.org/grace/ontology/authority_by_institution",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -6166,19 +6155,30 @@
     "attributes" : [ "object" ],
     "id" : "375"
   }, {
+    "iri" : "https://w3id.org/grace/ontology/given_name",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "339",
+    "label" : {
+      "IRI-based" : "given_name",
+      "en" : "given name"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype" ],
+    "id" : "471"
+  }, {
     "range" : "47",
     "domain" : "396",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "472"
   }, {
     "range" : "47",
     "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "473"
   }, {
     "range" : "47",
     "domain" : "397",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "474"
   }, {
     "iri" : "https://w3id.org/grace/ontology/type_of_entry",
@@ -6198,23 +6198,23 @@
     "id" : "388"
   }, {
     "range" : "47",
-    "domain" : "323",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "322",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "475"
   }, {
     "range" : "41",
     "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "476"
   }, {
     "range" : "99",
     "domain" : "330",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "477"
   }, {
     "range" : "59",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "478"
   }, {
     "iri" : "https://w3id.org/grace/ontology/level",
@@ -6239,18 +6239,6 @@
     "attributes" : [ "datatype" ],
     "id" : "480"
   }, {
-    "iri" : "https://w3id.org/grace/ontology/testified_by",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "10",
-    "label" : {
-      "IRI-based" : "testified_by",
-      "en" : "testified by"
-    },
-    "superproperty" : [ "117" ],
-    "domain" : "253",
-    "attributes" : [ "object" ],
-    "id" : "268"
-  }, {
     "iri" : "https://w3id.org/grace/ontology/money_object",
     "baseIri" : "https://w3id.org/grace/ontology",
     "range" : "55",
@@ -6267,6 +6255,18 @@
     "attributes" : [ "object" ],
     "id" : "113"
   }, {
+    "iri" : "https://w3id.org/grace/ontology/testified_by",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "testified_by",
+      "en" : "testified by"
+    },
+    "superproperty" : [ "117" ],
+    "domain" : "253",
+    "attributes" : [ "object" ],
+    "id" : "268"
+  }, {
     "iri" : "https://w3id.org/grace/ontology/id_type",
     "baseIri" : "https://w3id.org/grace/ontology",
     "range" : "15",
@@ -6275,7 +6275,7 @@
       "en" : "id type"
     },
     "superproperty" : [ "147" ],
-    "domain" : "348",
+    "domain" : "347",
     "attributes" : [ "object" ],
     "id" : "386"
   }, {
@@ -6384,7 +6384,7 @@
   }, {
     "iri" : "https://w3id.org/grace/ontology/dedicated_to",
     "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "43",
+    "range" : "45",
     "label" : {
       "IRI-based" : "dedicated_to",
       "en" : "dedicated to"
@@ -6462,17 +6462,6 @@
     "attributes" : [ "datatype" ],
     "id" : "487"
   }, {
-    "iri" : "https://w3id.org/grace/ontology/entry_literal",
-    "baseIri" : "https://w3id.org/grace/ontology",
-    "range" : "287",
-    "label" : {
-      "IRI-based" : "entry_literal",
-      "en" : "entry literal"
-    },
-    "domain" : "10",
-    "attributes" : [ "datatype" ],
-    "id" : "488"
-  }, {
     "iri" : "https://w3id.org/grace/ontology/described_by_entity",
     "baseIri" : "https://w3id.org/grace/ontology",
     "range" : "6",
@@ -6484,6 +6473,17 @@
     "domain" : "485",
     "attributes" : [ "object" ],
     "id" : "112"
+  }, {
+    "iri" : "https://w3id.org/grace/ontology/entry_literal",
+    "baseIri" : "https://w3id.org/grace/ontology",
+    "range" : "287",
+    "label" : {
+      "IRI-based" : "entry_literal",
+      "en" : "entry literal"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "488"
   }, {
     "iri" : "https://w3id.org/grace/ontology/type_of_institution",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -6525,7 +6525,7 @@
       "undefined" : "A term used to describe someone who is in competition or a candidate for a benefice."
     },
     "attributes" : [ "object" ],
-    "id" : "132"
+    "id" : "130"
   }, {
     "iri" : "https://w3id.org/grace/ontology/holds_object",
     "baseIri" : "https://w3id.org/grace/ontology",
@@ -6534,7 +6534,7 @@
       "IRI-based" : "holds_object",
       "en" : "holds object"
     },
-    "superproperty" : [ "13" ],
+    "superproperty" : [ "12" ],
     "domain" : "59",
     "comment" : {
       "undefined" : "returns all objects (directly and indirectly) held by an institution"
