@@ -12,8 +12,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 grace: a owl:Ontology ;
-    rdfs:label "Grace Ontology"@en ;
-    dc:title "Grace Ontology"@en ;
+    rdfs:label "GRACE Ontology"@en ;
+    dc:title "GRACE Ontology"@en ;
     dcterms:created "2025-04-24T11:09:53"@en ;
     dcterms:creator "Bruno Boute"@en,
         "Christoph Sander"@en ;
