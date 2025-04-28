@@ -12,8 +12,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 grace: a owl:Ontology ;
-    rdfs:label "Graceful17 Ontology"@en ;
-    dc:title "Graceful17 Ontology"@en ;
+    rdfs:label "Grace Ontology"@en ;
+    dc:title "Grace Ontology"@en ;
     dcterms:created "2025-04-24T11:09:53"@en ;
     dcterms:creator "Bruno Boute"@en,
         "Christoph Sander"@en ;
@@ -26,7 +26,7 @@ grace: a owl:Ontology ;
     owl:priorVersion grace:1.0.0 ;
     owl:versionIRI grace:1.0.1 ;
     prov:generatedAtTime "2025-04-24T11:09:53"^^xsd:dateTime ;
-    schema:citation "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
+    schema:citation "Sander, Christoph; Boute, Bruno. (2025). The GRACE Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
 
 grace:abbey a owl:Class ;
     rdfs:label "Abbey"@en ;
