@@ -982,7 +982,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Graceful17 Ontology"
+    "@value" : "Grace Ontology"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@language" : "en",
@@ -1010,7 +1010,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Graceful17 Ontology"
+    "@value" : "Grace Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
     "@id" : "https://w3id.org/grace/ontology/1.0.0"
@@ -1030,7 +1030,7 @@
   } ],
   "https://schema.org/citation" : [ {
     "@language" : "en",
-    "@value" : "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"
+    "@value" : "Sander, Christoph; Boute, Bruno. (2025). The GRACE Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"
   } ]
 }, {
   "@id" : "https://w3id.org/grace/ontology/abbey",

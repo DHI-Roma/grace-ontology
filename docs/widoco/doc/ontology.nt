@@ -1,7 +1,7 @@
 <https://w3id.org/grace/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/grace/ontology/> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/grace/ontology/1.0.1> .
 <https://w3id.org/grace/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2000/01/rdf-schema> .
-<https://w3id.org/grace/ontology/> <http://purl.org/dc/elements/1.1/title> "Graceful17 Ontology"@en .
+<https://w3id.org/grace/ontology/> <http://purl.org/dc/elements/1.1/title> "Grace Ontology"@en .
 <https://w3id.org/grace/ontology/> <http://purl.org/dc/terms/created> "2025-04-24T11:09:53"@en .
 <https://w3id.org/grace/ontology/> <http://purl.org/dc/terms/creator> "Bruno Boute"@en .
 <https://w3id.org/grace/ontology/> <http://purl.org/dc/terms/creator> "Christoph Sander"@en .
@@ -9,11 +9,11 @@
 <https://w3id.org/grace/ontology/> <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> .
 <https://w3id.org/grace/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "grace"@en .
 <https://w3id.org/grace/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/grace/ontology/" .
-<https://w3id.org/grace/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Graceful17 Ontology"@en .
+<https://w3id.org/grace/ontology/> <http://www.w3.org/2000/01/rdf-schema#label> "Grace Ontology"@en .
 <https://w3id.org/grace/ontology/> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/grace/ontology/1.0.0> .
 <https://w3id.org/grace/ontology/> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/grace/ontology/1.0.0> .
 <https://w3id.org/grace/ontology/> <http://www.w3.org/ns/prov#generatedAtTime> "2025-04-24T11:09:53"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<https://w3id.org/grace/ontology/> <https://schema.org/citation> "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
+<https://w3id.org/grace/ontology/> <https://schema.org/citation> "Sander, Christoph; Boute, Bruno. (2025). The GRACE Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
 # 
 # 
 # #################################################################

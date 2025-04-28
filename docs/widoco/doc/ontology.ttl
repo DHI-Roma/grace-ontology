@@ -9,7 +9,7 @@
 <https://w3id.org/grace/ontology/> rdf:type owl:Ontology ;
                                     owl:versionIRI <https://w3id.org/grace/ontology/1.0.1> ;
                                     owl:imports <http://www.w3.org/2000/01/rdf-schema> ;
-                                    <http://purl.org/dc/elements/1.1/title> "Graceful17 Ontology"@en ;
+                                    <http://purl.org/dc/elements/1.1/title> "Grace Ontology"@en ;
                                     <http://purl.org/dc/terms/created> "2025-04-24T11:09:53"@en ;
                                     <http://purl.org/dc/terms/creator> "Bruno Boute"@en ,
                                                                        "Christoph Sander"@en ;
@@ -17,11 +17,11 @@
                                     <http://purl.org/ontology/bibo/status> <http://purl.org/ontology/bibo/status/draft> ;
                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "grace"@en ;
                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/grace/ontology/" ;
-                                    rdfs:label "Graceful17 Ontology"@en ;
+                                    rdfs:label "Grace Ontology"@en ;
                                     owl:backwardCompatibleWith <https://w3id.org/grace/ontology/1.0.0> ;
                                     owl:priorVersion <https://w3id.org/grace/ontology/1.0.0> ;
                                     <http://www.w3.org/ns/prov#generatedAtTime> "2025-04-24T11:09:53"^^xsd:dateTime ;
-                                    <https://schema.org/citation> "Sander, Christoph; Boute, Bruno. (2025). The Graceful17 Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
+                                    <https://schema.org/citation> "Sander, Christoph; Boute, Bruno. (2025). The GRACE Ontology, https://w3id.org/g17/ontology (Version 1.0.1)"@en .
 
 #################################################################
 #    Annotation properties
